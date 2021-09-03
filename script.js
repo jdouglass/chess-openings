@@ -78,9 +78,8 @@ var config = {
   onDrop: onDrop,
   onSnapEnd: onSnapEnd
 }
-
-var board = ChessBoard('board', config);
+board = Chessboard('board', config)
 
 updateStatus()
 
-$('#resetBtn').on('click', board.start) // reset the board
+$('#resetBtn').on('click', board.start)
