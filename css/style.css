@@ -1,0 +1,18 @@
+#left-container {
+    width: 512px;
+}
+
+#right-container {
+    float: left;
+}
+
+#board {
+    width: 512px;
+    float: left;
+}
+
+#openings-area {
+    width: 200px;
+    height: 512px;
+    float: left;
+}

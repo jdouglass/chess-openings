@@ -17,3 +17,23 @@ r1bqk2r/ppp1bppp/3p1n2/8/3QP3/2N1BP2/PPP3PP/R3KB1R b KQkq - 2 8
 r1bq1rk1/ppp1bppp/3p1n2/8/3QP3/2N1BP2/PPP3PP/R3KB1R w KQ - 3 9
 r1bq1rk1/ppp1bppp/3p1n2/8/3QP3/2N1BP2/PPP3PP/2KR1B1R b - - 4 9
 
+["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Nxd4", "Qxd4", "d6", "Nc3", "Nf6", "f3", "Be7", "Be3", "O-O", "O-O-O"]
+
+0: {color: "w", from: "e2", to: "e4", flags: "b", piece: "p", …}
+1: {color: "b", from: "e7", to: "e5", flags: "b", piece: "p", …}
+2: {color: "w", from: "g1", to: "f3", flags: "n", piece: "n", …}
+3: {color: "b", from: "b8", to: "c6", flags: "n", piece: "n", …}
+4: {color: "w", from: "d2", to: "d4", flags: "b", piece: "p", …}
+5: {color: "b", from: "e5", to: "d4", flags: "c", piece: "p", …}
+6: {color: "w", from: "f3", to: "d4", flags: "c", piece: "n", …}
+7: {color: "b", from: "c6", to: "d4", flags: "c", piece: "n", …}
+8: {color: "w", from: "d1", to: "d4", flags: "c", piece: "q", …}
+9: {color: "b", from: "d7", to: "d6", flags: "n", piece: "p", …}
+10: {color: "w", from: "b1", to: "c3", flags: "n", piece: "n", …}
+11: {color: "b", from: "g8", to: "f6", flags: "n", piece: "n", …}
+12: {color: "w", from: "f2", to: "f3", flags: "n", piece: "p", …}
+13: {color: "b", from: "f8", to: "e7", flags: "n", piece: "b", …}
+14: {color: "w", from: "c1", to: "e3", flags: "n", piece: "b", …}
+15: {color: "b", from: "e8", to: "g8", flags: "k", piece: "k", …}
+16: {color: "w", from: "e1", to: "c1", flags: "q", piece: "k", …}
+

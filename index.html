@@ -11,18 +11,38 @@
     <script type="text/javascript" src="chess.js/chess.js"></script>
     <!-- <script src="scotch.js"></script> -->
     <link rel="stylesheet" href="css/chessboard-1.0.0.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
   
   </head>
     <body>
-        <div id="board" style="width: 512px"></div>
-        <label>Status:</label>
-        <div id="status"></div>
-        <label>FEN:</label>
-        <div id="fen"></div>
-        <label>PGN:</label>
-        <div id="pgn"></div>
-        <button id="resetBtn" type="button">Reset</button>
+        <div id="container">
+            <div id="left-container">
+                <div id="board"></div>
+                <div id="game-stats"> <!-- maybe change the name -->
+                    <label>Status:</label>
+                    <div id="status"></div>
+                    <label>FEN:</label>
+                    <div id="fen"></div>
+                    <label>PGN:</label>
+                    <div id="pgn"></div>
+                    <button id="resetBtn" type="button">Reset</button>
+                </div>
+            </div>
+            <!-- <div id="right-container"> -->
+            <!--     <div id="openings-area"> -->
+            <!--         <ul id="openings-list" tabindex="0" role="listbox"> -->
+            <!--             <li id="scotch-Nxd4" role="option"> -->
+            <!--                 Scotch Nxd4?! -->
+            <!--             </li> -->
+            <!--             <li id="scotch-d6" role="option"> -->
+            <!--                 Scotch d6?! -->
+            <!--             </li> -->
+            <!--         </ul> -->
+            <!--     </div> -->
+            <!-- </div> -->
+        </div>
+
     </body>
 
   
