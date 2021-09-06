@@ -35,14 +35,13 @@ function onDrop (source, target) {
         to: target,
 
         // take off auto queen? but not necessary for opening theory
-        promotion: 'q' // NOTE: always promote to a queen for example simplicity
+        // promotion: 'q' // NOTE: always promote to a queen for example simplicity
     })
 
     // illegal move
     if (move === null) return 'snapback'
+    let attempt = game.history()
     if (variation.length !== 0) {
-
-        let attempt = game.history()
         if (attempt.length % 2 !== 0 && attempt[attempt.length-1] === variation[attempt.length-1]) {
             game.move(variation[attempt.length])
         } else {
@@ -117,6 +116,7 @@ $(document).ready(startGame)
 // and resets the status variables
 $('#resetBtn').click(startGame)
 
+const scotchClassical_Be3 = ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Be3", "Qf6", "c3", "Nge7", "Bc4", "Ne5", "Be2", "Qg6", "O-O", "d6"]
 const steinitzVariation = ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Nxd4", "Qxd4", "d6", "Nc3", "Nf6", "f3", "Be7", "Be3", "O-O", "O-O-O"]
 
 // openings menu scripts
@@ -136,6 +136,15 @@ $("#kings-knight-opening").click(function() {
 
 $("#scotch-game").click(function() {
     $("#scotch-show").toggleClass("show");
+});
+
+$("#scotch-classical").click(function() {
+    $("#scotch-classical-show").toggleClass("show");
+});
+
+$("#scotch-classical-Be3").click(function() {
+    startGame()
+    variation = scotchClassical_Be3
 });
 
 $("#steinitz-variation").click(function() {
