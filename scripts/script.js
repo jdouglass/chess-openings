@@ -117,6 +117,7 @@ $(document).ready(startGame)
 $('#resetBtn').click(startGame)
 
 const scotchClassical_Be3 = ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Be3", "Qf6", "c3", "Nge7", "Bc4", "Ne5", "Be2", "Qg6", "O-O", "d6"]
+const scotchIntermezzo = ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Nxc6", "Qf6", "Qd2", "dxc6", "Nc3"]
 const steinitzVariation = ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Nxd4", "Qxd4", "d6", "Nc3", "Nf6", "f3", "Be7", "Be3", "O-O", "O-O-O"]
 
 // openings menu scripts
@@ -145,6 +146,11 @@ $("#scotch-classical").click(function() {
 $("#scotch-classical-Be3").click(function() {
     startGame()
     variation = scotchClassical_Be3
+});
+
+$("#scotch-classical-intermezzo").click(function() {
+    startGame()
+    variation = scotchIntermezzo
 });
 
 $("#steinitz-variation").click(function() {
