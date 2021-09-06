@@ -9,9 +9,12 @@
 // https://github.com/mcba1n/chessboard-arrows
 
 
-// const { Chess } = require('./chess.js')
 var board = null
+var $board = $('#board')
 const game = new Chess()
+var squareClass = 'square-55d63'
+var squareToHighlight = null
+var colorToHighlight = null
 var $status = $('#status')
 var $fen = $('#fen')
 var $pgn = $('#pgn')
@@ -38,16 +41,33 @@ function onDrop (source, target) {
         // promotion: 'q' // NOTE: always promote to a queen for example simplicity
     })
 
+    if (move.color === "w") {
+        $board.find("." + squareClass).removeClass("highlight-white")
+        $board.find(".square-" + move.from).addClass("highlight-white")
+        squareToHighlight = move.to
+        colorToHighlight = "white"
+    } else {
+        $board.find("." + squareClass).removeClass("highlight-black")
+        $board.find(".square-" + move.from).addClass("highlight-black")
+        squareToHighlight = move.to
+        colorToHighlight = "black"
+    }
+
     // illegal move
     if (move === null) return 'snapback'
     let attempt = game.history()
     if (variation.length !== 0) {
-        if (attempt.length % 2 !== 0 && attempt[attempt.length-1] === variation[attempt.length-1]) {
+        if (attempt[attempt.length-1] === variation[attempt.length-1]) {
             game.move(variation[attempt.length])
+            if (attempt.length === variation.length) {
+                // display results
+            }
         } else {
             game.undo()
         }
     }
+
+
     updateStatus()
 }
 
@@ -55,6 +75,7 @@ function onDrop (source, target) {
 // for castling, en passant, pawn promotion
 function onSnapEnd () {
     board.position(game.fen())
+    $board.find(".square-" + squareToHighlight).addClass("highlight-" + colorToHighlight)
 }
 
 // updates three variables which are the colour's turn, FEN, and PGN
@@ -116,9 +137,14 @@ $(document).ready(startGame)
 // and resets the status variables
 $('#resetBtn').click(startGame)
 
+// scotch game lines
 const scotchClassical_Be3 = ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Be3", "Qf6", "c3", "Nge7", "Bc4", "Ne5", "Be2", "Qg6", "O-O", "d6"]
+const potterVariation = ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Nb3", "Bb6", "Nc3", "Qf6", "Qe2", "Nge7", "Be3", "O-O", "O-O-O", "d6"]
 const scotchIntermezzo = ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Nxc6", "Qf6", "Qd2", "dxc6", "Nc3"]
 const steinitzVariation = ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Nxd4", "Qxd4", "d6", "Nc3", "Nf6", "f3", "Be7", "Be3", "O-O", "O-O-O"]
+
+// sicilian defence lines
+const sicilianNajdorf = []
 
 // openings menu scripts
 // NOTE TO SELF: need to fix the arrow rotation
@@ -151,6 +177,11 @@ $("#scotch-classical-Be3").click(function() {
 $("#scotch-classical-intermezzo").click(function() {
     startGame()
     variation = scotchIntermezzo
+});
+
+$("#scotch-classical-potter").click(function() {
+    startGame()
+    variation = potterVariation
 });
 
 $("#steinitz-variation").click(function() {
