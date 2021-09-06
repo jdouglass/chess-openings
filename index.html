@@ -7,33 +7,75 @@
 <!--  Including jQuery, another tool chessboardjs uses:-->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <!--  Including the chessboardjs files:-->
-    <script src="scripts/chessboard-1.0.0.js"></script>
-    <script type="text/javascript" src="scripts/chess.js/chess.js"></script>
-    <!-- <script src="scotch.js"></script> -->
+    <!-- <script src="/scripts/chessboard-1.0.0.js"></script> -->
+    <!-- <script src="/scripts/chess.js/chess.js"></script> -->
+    <script src="https://kit.fontawesome.com/10ea4cd213.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/chessboard-1.0.0.min.css">
     <link rel="stylesheet" href="styles/style.css">
-
-  
-  </head>
+</head>
     <body>
+        <nav class="openings-menu">
+            <div class="text">Openings Menu</div>
+            <ul class="parent">
+                <li><a href="#" class="level-1-btn" id="kings-pawn-opening">King's Pawn Opening<span class="fas fa-angle-down kings-pawn-arrow"></span></a></li>
+                    <ul class="level-2-class" id="kings-pawn-show">
+                        <li><a href="#" class="level-2-btn" id="sicilian-defence">Sicilian Defence<span class="fas fa-angle-down"></a></li>
+                            <ul class="level-3-class" id="sicilian-defence-show">
+                                <li><a href="#" class="level-3-btn" id="open-sicilian">Open Sicilian<span class="fas fa-angle-down"></a></li>
+                                    <ul class="level-4-class" id="open-sicilian-show">
+                                        <li><a href="#" class="level-5-btn" id="nadjorf-variation">Najdorf Variation</a></li>
+                                        <li><a href="#" class="level-5-btn" id="dragon-variation">Dragon Variation</a></li>
+                                        <li><a href="#" class="level-5-btn" id="classical-variation">Classical Variation</a></li>
+                                        <li><a href="#" class="level-5-btn" id="scheveningen-variation">Scheveningen Variation</a></li>
+                                        <li><a href="#" class="level-5-btn" id="accelerated-dragon">Accelerated Dragon</a></li>
+                                        <li><a href="#" class="level-5-btn" id="kalashnikov-variation">Kalashnikov Variation</a></li>
+                                        <li><a href="#" class="level-5-btn" id="taimanov-variation">Taimanov Variation</a></li>
+                                        <li><a href="#" class="level-5-btn" id="kan-variation">Kan Variation</a></li>
+                                        <li><a href="#" class="level-5-btn" id="sicilian-four-knights">Four Knights Variation</a></li>
+                                        <li><a href="#" class="level-5-btn" id="pin-variation">Pin Variation</a></li>
+                                        <li><a href="#" class="level-5-btn" id="sveshnikov-variation">Sveshnikov Variation</a></li> <!--MAKE THIS INTO A DROP DOWN LATER-->
+                                    </ul>
+                                <li><a href="#" class="level-3-btn" id="closed-sicilian">Closed Sicilian<span class="fas fa-angle-down"></a></li>
+                                <li><a href="#" class="level-3-btn" id="Nf3-sicilian">2.Nf3<span class="fas fa-angle-down"></a></li>
+                                <li><a href="#" class="level-3-btn" id="Nf3-without-d4">2.Nf3 without 3.d4<span class="fas fa-angle-down"></a></li>
+                                <li><a href="#" class="level-3-btn" id="misc-sicilian">Misc. Sicilian<span class="fas fa-angle-down"></a></li>
+                            </ul>
+                        <li><a href="#" class="level-2-btn" id="open-game">Open Game<span class="fas fa-angle-down"></a></li>
+                            <ul class="level-3-class" id="open-game-show">
+                                <li><a href="#" class="level-3-btn" id="kings-knight-opening">King's Knight Opening<span class="fas fa-angle-down"></a></li>
+                                    <ul class="level-4-class" id="kings-knight-show">
+                                        <li><a href="#" class="level-4-btn" id="scotch-game">Scotch Game<span class="fas fa-angle-down"></a></li>
+                                            <ul class="level-5-class" id="scotch-show">
+                                                <li><a href="#" class="level-5-btn" id="steinitz-variation">Scotch Game Steinitz Variation</a></li>
+                                            </ul>
+                                        <li><a href="#" class="level-4-btn" id="ruy-lopez">Ruy Lopez
+                                                <span class="fas fa-angle-down"></a></li>
+                                    </ul>
+                            </ul>
+                    </ul>
+                <li><a href="#" class="level-1-btn" id="queen-pawn-opening">Queen Pawn Opening
+                        <span class="fas fa-angle-down"></a></li>
+                    <ul class="level-2-class">
+                        <li><a href="#" class="level-2-btn" id="closed-game">Closed Game
+                                <span class="fas fa-angle-down"></a></li>
+                    </ul>
+            </ul>
+        </nav>
 
-        <!-- add menu to pick the opening -->
-
-        <div id="container">
-            <div id="left-container">
-                <div id="board"></div>
-                <div id="game-stats"> <!-- maybe change the name -->
-                    <label>Status:</label>
-                    <div id="status"></div>
-                    <label>FEN:</label>
-                    <div id="fen"></div>
-                    <label>PGN:</label>
-                    <div id="pgn"></div>
-                    <button id="resetBtn" type="button">Reset</button>
-                </div>
-            </div>
-        </div>
-
+        <!-- <div id="container"> -->
+        <!--     <div id="left-container"> -->
+        <!--         <div id="board"></div> -->
+        <!--         <div id="game-stats"> <!-1- maybe change the name -1-> -->
+        <!--             <label>Status:</label> -->
+        <!--             <div id="status"></div> -->
+        <!--             <label>FEN:</label> -->
+        <!--             <div id="fen"></div> -->
+        <!--             <label>PGN:</label> -->
+        <!--             <div id="pgn"></div> -->
+        <!--             <button id="resetBtn" type="button">Reset</button> -->
+        <!--         </div> -->
+        <!--     </div> -->
+        <!-- </div> -->
     </body>
 
   
@@ -43,6 +85,6 @@
   Note that we could write JS directly in between the script tags if you'd 
   rather, but i didn't want to so i put it in a new file. 
 -->
-    <script type="text/javascript" src="scripts/script.js"></script>
+    <script type="text/javascript" src="/scripts/script.js"></script>
 </html>
 
