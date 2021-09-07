@@ -19,6 +19,7 @@ var $status = $('#status')
 var $fen = $('#fen')
 var $pgn = $('#pgn')
 var variation = []
+var totalMoves = 0
 
 function onDragStart (source, piece, position, orientation) {
     // do not pick up pieces if the game is over
@@ -41,6 +42,7 @@ function onDrop (source, target) {
         // promotion: 'q' // NOTE: always promote to a queen for example simplicity
     })
 
+    // highlight squares where the piece moved to and from
     if (move.color === "w") {
         $board.find("." + squareClass).removeClass("highlight-white")
         $board.find(".square-" + move.from).addClass("highlight-white")
@@ -55,19 +57,35 @@ function onDrop (source, target) {
 
     // illegal move
     if (move === null) return 'snapback'
+
+    // check to see if the player's attempt is the correct move for the current variation
     let attempt = game.history()
+
+    // increment user's move count by 1
+    console.log(totalMoves += 1)
+
     if (variation.length !== 0) {
         if (attempt[attempt.length-1] === variation[attempt.length-1]) {
             game.move(variation[attempt.length])
+
+            // display results
             if (attempt.length === variation.length) {
-                // display results
+                let accuracy = totalMoves / Math.round(variation.length / 2)
+
+                // if there were mistakes from the user
+                // calcuate the adjusted accuracy
+                if (accuracy > 1) {
+                    accuracy = 100 - ((accuracy - 1) * 100)
+                    accuracy = accuracy.toFixed(2)
+                } else {
+                    accuracy *= 100
+                }
+                // console.log(accuracy)
             }
         } else {
             game.undo()
         }
     }
-
-
     updateStatus()
 }
 
@@ -123,6 +141,7 @@ function startGame() {
     board = Chessboard('board', config)
     game.reset()
     updateStatus()
+    totalMoves = 0
 }
 
 
