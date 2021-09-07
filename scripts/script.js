@@ -19,82 +19,9 @@ var $status = $('#status')
 var $fen = $('#fen')
 var $pgn = $('#pgn')
 var variation = []
+var attempt = []
 var totalMoves = 0
 
-function onDragStart (source, piece, position, orientation) {
-    // do not pick up pieces if the game is over
-    if (game.game_over()) return false
-
-    // only pick up pieces for the side to move
-    if ((game.turn() === 'w' && piece.search(/^b/) !== -1) ||
-        (game.turn() === 'b' && piece.search(/^w/) !== -1)) {
-        return false
-    }
-}
-
-function onDrop (source, target) {
-    // see if the move is legal
-    var move = game.move({
-        from: source,
-        to: target,
-
-        // take off auto queen? but not necessary for opening theory
-        // promotion: 'q' // NOTE: always promote to a queen for example simplicity
-    })
-
-    // highlight squares where the piece moved to and from
-    if (move.color === "w") {
-        $board.find("." + squareClass).removeClass("highlight-white")
-        $board.find(".square-" + move.from).addClass("highlight-white")
-        squareToHighlight = move.to
-        colorToHighlight = "white"
-    } else {
-        $board.find("." + squareClass).removeClass("highlight-black")
-        $board.find(".square-" + move.from).addClass("highlight-black")
-        squareToHighlight = move.to
-        colorToHighlight = "black"
-    }
-
-    // illegal move
-    if (move === null) return 'snapback'
-
-    // check to see if the player's attempt is the correct move for the current variation
-    let attempt = game.history()
-
-    // increment user's move count by 1
-    console.log(totalMoves += 1)
-
-    if (variation.length !== 0) {
-        if (attempt[attempt.length-1] === variation[attempt.length-1]) {
-            game.move(variation[attempt.length])
-
-            // display results
-            if (attempt.length === variation.length) {
-                let accuracy = totalMoves / Math.round(variation.length / 2)
-
-                // if there were mistakes from the user
-                // calcuate the adjusted accuracy
-                if (accuracy > 1) {
-                    accuracy = 100 - ((accuracy - 1) * 100)
-                    accuracy = accuracy.toFixed(2)
-                } else {
-                    accuracy *= 100
-                }
-                // console.log(accuracy)
-            }
-        } else {
-            game.undo()
-        }
-    }
-    updateStatus()
-}
-
-// update the board position after the piece snap
-// for castling, en passant, pawn promotion
-function onSnapEnd () {
-    board.position(game.fen())
-    $board.find(".square-" + squareToHighlight).addClass("highlight-" + colorToHighlight)
-}
 
 // updates three variables which are the colour's turn, FEN, and PGN
 // after each move is made and prints to the HTML tags
@@ -129,21 +56,113 @@ function updateStatus () {
     $pgn.html(game.pgn())
 }
 
+function removeHighlights (color) {
+    $board.find('.' + squareClass).removeClass('highlight-' + color)
+}
+
+function onDragStart (source, piece, position, orientation) {
+    // do not pick up pieces if the game is over
+    if (game.game_over()) return false
+
+    if (variation.length === 0) {
+        if ((game.turn() === 'w' && piece.search(/^b/) !== -1) ||
+            (game.turn() === 'b' && piece.search(/^w/) !== -1)) {
+            return false
+        }
+    } else {
+        // only pick up pieces for White
+        if (piece.search(/^b/) !== -1) return false
+    }
+}
+
+function onDrop (source, target) {
+    // see if the move is legal
+    var move = game.move({
+        from: source,
+        to: target,
+
+        // not necessary to have this i think
+        // promotion: 'q' // NOTE: always promote to a queen for example simplicity
+    })
+
+    // illegal move
+    if (move === null) return 'snapback'
+
+    attempt = game.history()
+
+    if (variation.length !== 0) {
+        if (attempt[attempt.length-1] !== variation[attempt.length-1]) {
+            game.undo()
+        } else {
+            // highlight white's move
+            removeHighlights('white')
+            $board.find('.square-' + source).addClass('highlight-white')
+            $board.find('.square-' + target).addClass('highlight-white')
+
+            // make random move for black
+            window.setTimeout(makeBlackMove, 250)
+        }
+    } else {
+        if (move.color === 'w') {
+            removeHighlights("white")
+            $board.find('.square-' + move.from).addClass('highlight-white')
+            squareToHighlight = move.to
+            colorToHighlight = 'white'
+        }
+        if (move.color === "b") {
+            removeHighlights("black")
+            $board.find('.square-' + move.from).addClass('highlight-black')
+            squareToHighlight = move.to
+            colorToHighlight = 'black'
+        }
+    }
+
+}
+
+function makeBlackMove() {
+    game.move(variation[attempt.length])
+    let blackMove = game.history({verbose: true})
+    // console.log(blackMove)
+    // console.log(blackMove[attempt.length])
+
+    // highlight black's move
+    removeHighlights('black')
+    $board.find('.square-' + blackMove[attempt.length].from).addClass('highlight-black')
+    squareToHighlight = blackMove[attempt.length].to
+
+    // update the board to the new position
+    board.position(game.fen())
+}
+
+function onMoveEnd () {
+    $board.find('.square-' + squareToHighlight).addClass('highlight-black')
+}
+
+// update the board position after the piece snap
+// for castling, en passant, pawn promotion
+function onSnapEnd () {
+    if (variation.length === 0) {
+        $board.find('.square-' + squareToHighlight).addClass('highlight-'+colorToHighlight)
+    }
+    board.position(game.fen())
+}
+
 function startGame() {
     let config = {
         draggable: true,
         position: 'start',
         onDragStart: onDragStart,
         onDrop: onDrop,
-        onSnapEnd: onSnapEnd
+        onSnapEnd: onSnapEnd,
+        onMoveEnd: onMoveEnd
     }
     variation = []
+    attempt = []
     board = Chessboard('board', config)
     game.reset()
     updateStatus()
     totalMoves = 0
 }
-
 
 // this function is called after every move is made and updates the turn status,
 // FEN and PGN
