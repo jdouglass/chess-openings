@@ -116,6 +116,7 @@ function onDrop (source, target) {
             colorToHighlight = 'black'
         }
     }
+    updateStatus()
 
 }
 
@@ -136,6 +137,7 @@ function makeBlackMove() {
 
 function onMoveEnd () {
     $board.find('.square-' + squareToHighlight).addClass('highlight-black')
+    updateStatus()
 }
 
 // update the board position after the piece snap
