@@ -3,32 +3,44 @@
 }
 
 .highlight-white {
-    /* box-shadow: inset 0 0 3px 3px yellow; */
     background: #E8C168;
 }
 .highlight-black {
     background: #98BEB9;
 }
 
+
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     user-select: none;
     box-sizing: border-box;
     font-family: 'Helvetica', sans-serif;
 }
 
-.board-container {
-    margin: auto;
-    width: 100%;
+#container {
+    width: 1500px;
+    display: flex;
+}
+
+.flex-div.board {
+    padding-left: 50px;
     padding-top: 50px;
-    padding-left: 500px;
+}
+
+#results-box { /* why won't this work when i use the div class? */
+    width: 400px;
+    height: 509px;
+    float: left;
+    border: 2px solid black;
+    margin-top: 50px;
+    margin-left: 20px;
 }
 
 .openings-menu {
-    position: fixed;
+    float: left;
     width: 400px;
-    height: 100%;
+    height: 100vh;
     left: 0;
     background: #1e1e1e;
 }
@@ -42,6 +54,9 @@
     text-align: center;
     background: #1e1e1e;
     letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    user-select: none;
 }
 
 .parent {
@@ -93,6 +108,7 @@
     display: none;
 }
 .level-2-class li {
+    list-style: none;
     line-height: 30px;
     border-bottom: none;
 }
@@ -162,7 +178,7 @@
     padding-left: 110px;
 }
 
-
+/* displays the lists when buttons are clicked */
 #kings-pawn-show.show {
     display: block;
 }
