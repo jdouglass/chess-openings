@@ -12,6 +12,7 @@ $("#kings-knight-opening").click(function() {
     $("#kings-knight-show").toggleClass("show");
 });
 
+// SCOTCH GAME
 $("#scotch-game").click(function() {
     $("#scotch-show").toggleClass("show");
 });
@@ -40,6 +41,7 @@ $("#steinitz-variation").click(function() {
     variation = steinitzVariation
 });
 
+// SICILIAN DEFENCE
 $("#sicilian-defence").click(function() {
     $("#sicilian-defence-show").toggleClass("show");
 });
@@ -47,6 +49,41 @@ $("#sicilian-defence").click(function() {
 $("#open-sicilian").click(function() {
     $("#open-sicilian-show").toggleClass("show");
 });
+$("#najdorf-variation").click(function() {
+    $("#najdorf-variation-show").toggleClass("show");
+});
+
+$("#sicilian-najdorf-classical").click(function() {
+    startGame()
+    variation = sicilianNajdorfClassicalMainLine
+});
+
+$("#sicilian-najdorf-english").click(function() {
+    startGame()
+    variation = sicilianNajdorfEnglishAttack
+});
+
+$("#sicilian-najdorf-lipnitzky").click(function() {
+    startGame()
+    variation = sicilianNajdorfLipnitzkyAttack
+});
+$("#sicilian-najdorf-opocensky").click(function() {
+    startGame()
+    variation = sicilianNajdorfOpocensky
+});
+$("#sicilian-najdorf-amsterdam").click(function() {
+    startGame()
+    variation = sicilianNajdorfAmsterdam
+});
+$("#sicilian-najdorf-adams").click(function() {
+    startGame()
+    variation = sicilianNajdorfAdams
+});
+$("#sicilian-najdorf-argentine").click(function() {
+    startGame()
+    variation = sicilianNajdorfArgentine
+});
+
 
 $("#queen-pawn-opening").click(function() {
     $("#queen-pawn-show").toggleClass("show");
