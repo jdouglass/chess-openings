@@ -53,10 +53,11 @@
 
 .openings-menu {
     float: left;
-    width: 400px;
+    width: 350px;
     height: 100vh;
     left: 0;
     background: #1e1e1e;
+    overflow: auto;
 }
 
 .openings-menu .text {
@@ -210,5 +211,17 @@
 }
 
 #scotch-classical-show.show {
+    display: block;
+}
+
+#sicilian-defence-show.show {
+    display: block;
+}
+
+#open-sicilian-show.show {
+    display: block;
+}
+
+#queen-pawn-show.show {
     display: block;
 }
