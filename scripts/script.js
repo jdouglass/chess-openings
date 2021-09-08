@@ -96,6 +96,7 @@ function onDrop (source, target) {
         } else {
             // highlight white's move
             removeHighlights('white')
+            removeHighlights('hint')
             $board.find('.square-' + source).addClass('highlight-white')
             $board.find('.square-' + target).addClass('highlight-white')
 
@@ -124,7 +125,7 @@ function makeBlackMove() {
     game.move(variation[attempt.length])
     let blackMove = game.history({verbose: true})
     // console.log(blackMove)
-    // console.log(blackMove[attempt.length])
+    console.log(blackMove[attempt.length])
 
     // highlight black's move
     removeHighlights('black')
@@ -133,6 +134,8 @@ function makeBlackMove() {
 
     // update the board to the new position
     board.position(game.fen())
+
+    attempt = game.history()
 }
 
 function onMoveEnd () {
@@ -147,6 +150,16 @@ function onSnapEnd () {
         $board.find('.square-' + squareToHighlight).addClass('highlight-'+colorToHighlight)
     }
     board.position(game.fen())
+}
+
+function showHint() {
+    if (variation.length !== 0 && game.turn() === "w") {
+        let hintSquare = game.move(variation[attempt.length])
+        hintSquare = hintSquare.from
+        $board.find('.' + squareClass).removeClass('highlight-hint')
+        $board.find('.square-' + hintSquare).addClass('highlight-hint')
+        game.undo()
+    }
 }
 
 function startGame() {
@@ -177,11 +190,14 @@ $(document).ready(startGame)
 // and resets the status variables
 $('#resetBtn').click(startGame)
 
+$('#hintBtn').click(showHint)
+
 // scotch game lines
 const scotchClassical_Be3 = ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Be3", "Qf6", "c3", "Nge7", "Bc4", "Ne5", "Be2", "Qg6", "O-O", "d6"]
 const potterVariation = ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Nb3", "Bb6", "Nc3", "Qf6", "Qe2", "Nge7", "Be3", "O-O", "O-O-O", "d6"]
 const scotchIntermezzo = ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Nxc6", "Qf6", "Qd2", "dxc6", "Nc3"]
 const steinitzVariation = ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Nxd4", "Qxd4", "d6", "Nc3", "Nf6", "f3", "Be7", "Be3", "O-O", "O-O-O"]
+const scotchGambit = []
 
 // sicilian defence lines
 const sicilianNajdorf = []

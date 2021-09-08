@@ -19,6 +19,10 @@
     background: #98BEB9;
 }
 
+.highlight-hint {
+    background: #FF7F7F;
+}
+
 
 * {
     padding: 0;
