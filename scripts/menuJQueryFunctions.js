@@ -56,6 +56,7 @@ $("#najdorf-variation").click(function() {
 $("#sicilian-najdorf-classical").click(function() {
     startGame()
     variation = sicilianNajdorfClassicalMainLine
+    console.log(variation)
 });
 
 $("#sicilian-najdorf-english").click(function() {

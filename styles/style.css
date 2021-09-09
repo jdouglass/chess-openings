@@ -222,6 +222,10 @@
     display: block;
 }
 
+#najdorf-variation-show.show {
+    display: block;
+}
+
 #queen-pawn-show.show {
     display: block;
 }

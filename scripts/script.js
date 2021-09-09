@@ -206,5 +206,11 @@ $('#hintBtn').click(showHint)
 $('#flipBoardBtn').click(flipBoard)
 
 
+// const sicilianNajdorfClassicalMainLine = ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Bg5", "e6", "f4", "Be7", "Qf3", "Qc7", "O-O-O", "Nbd7", "g4"]
+// $("#sicilian-najdorf-classical").click(function() {
+//     startGame()
+//     variation = sicilianNajdorfClassicalMainLine
+//     console.log(variation)
+// });
 
 
