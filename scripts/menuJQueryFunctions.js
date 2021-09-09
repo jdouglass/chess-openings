@@ -12,6 +12,10 @@ $("#kings-knight-opening").click(function() {
     $("#kings-knight-show").toggleClass("show");
 });
 
+$("#kings-knight-opening-main-line").click(function() {
+    $("#kings-knight-main-show").toggleClass("show");
+});
+
 // SCOTCH GAME
 $("#scotch-game").click(function() {
     $("#scotch-show").toggleClass("show");

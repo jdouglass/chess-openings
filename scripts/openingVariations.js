@@ -3,8 +3,10 @@ const scotchClassical_Be3 = ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc
 const potterVariation = ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Nb3", "Bb6", "Nc3", "Qf6", "Qe2", "Nge7", "Be3", "O-O", "O-O-O", "d6"]
 const scotchIntermezzo = ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Nxc6", "Qf6", "Qd2", "dxc6", "Nc3"]
 const steinitzVariation = ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Nxd4", "Qxd4", "d6", "Nc3", "Nf6", "f3", "Be7", "Be3", "O-O", "O-O-O"]
-const scotchGambit = []
+const scotchGambit = ["e4", "e5", "Nf3", "Nc6", "d4", "Nxd4", "Bc4", "Bc5", "c3", "Nf6"]
 
+
+// ----------------------- OPEN SICILIAN -----------------------
 // sicilian najdorf 
 const sicilianNajdorfClassicalMainLine = ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Bg5", "e6", "f4", "Be7", "Qf3", "Qc7", "O-O-O", "Nbd7", "g4"]
 const sicilianNajdorfArgentine = ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Bg5", "e6", "f4", "Be7", "Qf3", "Qc7", "h6", "Bh4", "g5", "fxg5", "Nfd7"] // maybe not include this one
@@ -20,3 +22,16 @@ const sicilianDragonClassical = ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", 
 const sicilianDragonLevenfish = ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "f4", "Nc6", "e5"]
 
 // sicilian classical
+const sicilianClassical1 = ["e4", "c5", "Nf3", "d6", "cxd4", "Nxd4", "Nf6", "Nc3", "Nc6", "Bg5" ] // ADD MORE TO THIS OR ANOTHER VARIATION
+
+// scheveningen variation
+// maybe add more variations later if im feeling up to it
+const sicilianScheveningen = ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "e6", "g4", "h6", "h4", "Nc6", "Rg1", "d5", "Bb5", "Bd7", "exd5", "Nxd5", "Nxd5", "exd5", "Qe2+"]
+
+const sicilianAcceleratedDragon = ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "g6", "Nc3", "Bg7", "Be3", "Nf6", "Bc4", "O-O", "Bb3", "a5"]
+
+// ----------------------- CLOSED SICILIAN -----------------------
+// COME BACK TO THE REST OF THE SICILIANS
+//
+
+

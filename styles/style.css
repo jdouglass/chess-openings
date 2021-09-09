@@ -100,7 +100,7 @@
 
 .parent li a:hover {
     color: cyan;
-    background: #1e1e1e;
+    background: black;
     border-left-color: cyan;
 }
 
@@ -193,6 +193,21 @@
     padding-left: 110px;
 }
 
+/* level 7 */
+.level-7-class {
+    position: static;
+    display: none;
+}
+.level-7-class li {
+    line-height: 30px;
+    border-bottom: none;
+}
+.level-7-class li a {
+    font-size: 15px;
+    color: #e6e6e6;
+    padding-left: 130px;
+}
+
 /* displays the lists when buttons are clicked */
 #kings-pawn-show.show {
     display: block;
@@ -203,6 +218,9 @@
 }
 
 #kings-knight-show.show {
+    display: block;
+}
+#kings-knight-main-show.show {
     display: block;
 }
 
