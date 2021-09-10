@@ -244,6 +244,26 @@
     display: block;
 }
 
+#ruy-lopez-show.show {
+    display: block;
+}
+
+#italian-game-show.show {
+    display: block;
+}
+
+#three-knights-game-show.show {
+    display: block;
+}
+
+#petrov-defence-show.show {
+    display: block;
+}
+
+#philidor-defence-show.show {
+    display: block;
+}
+
 #queen-pawn-show.show {
     display: block;
 }

@@ -89,6 +89,30 @@ $("#sicilian-najdorf-argentine").click(function() {
     variation = sicilianNajdorfArgentine
 });
 
+// RUY LOPEZ
+$("#ruy-lopez").click(function() {
+    $("#ruy-lopez-show").toggleClass("show");
+});
+
+// ITALIAN GAME
+$("#italian-game").click(function() {
+    $("#italian-game-show").toggleClass("show");
+});
+
+// ITALIAN GAME
+$("#three-knights-game").click(function() {
+    $("#three-knights-game-show").toggleClass("show");
+});
+
+// PETROV DEFENCE
+$("#petrov-defence").click(function() {
+    $("#petrov-defence-show").toggleClass("show");
+});
+
+// PHILIDOR DEFENCE
+$("#philidor-defence").click(function() {
+    $("#philidor-defence-show").toggleClass("show");
+});
 
 $("#queen-pawn-opening").click(function() {
     $("#queen-pawn-show").toggleClass("show");
