@@ -263,6 +263,60 @@
 #philidor-defence-show.show {
     display: block;
 }
+#vienna-game-show.show {
+    display: block;
+}
+#vienna-falkbeer-show.show {
+    display: block;
+}
+#bishops-opening-show.show {
+    display: block;
+}
+#kings-gambit-show.show {
+    display: block;
+}
+#kings-gambit-accepted-show.show {
+    display: block;
+}
+#kings-gambit-declined-show.show {
+    display: block;
+}
+#french-defence-show.show {
+    display: block;
+}
+#french-main-line-show.show {
+    display: block;
+}
+#french-Nc3-show.show {
+    display: block;
+}
+#french-tarrasch-show.show {
+    display: block;
+}
+#french-advance-show.show {
+    display: block;
+}
+#caro-kann-show.show {
+    display: block;
+}
+#caro-main-line-show.show {
+    display: block;
+}
+#pirc-defence-show.show {
+    display: block;
+}
+#alekhine-defence-show.show {
+    display: block;
+}
+#scandinavian-show.show {
+    display: block;
+}
+#nimzowitsch-show.show {
+    display: block;
+}
+#owens-show.show {
+    display: block;
+}
 
 #queen-pawn-show.show {
     display: block;

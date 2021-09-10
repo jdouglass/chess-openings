@@ -113,6 +113,60 @@ $("#petrov-defence").click(function() {
 $("#philidor-defence").click(function() {
     $("#philidor-defence-show").toggleClass("show");
 });
+$("#vienna-game").click(function() {
+    $("#vienna-game-show").toggleClass("show");
+});
+$("#vienna-falkbeer").click(function() {
+    $("#vienna-falkbeer-show").toggleClass("show");
+});
+$("#bishops-opening").click(function() {
+    $("#bishops-opening-show").toggleClass("show");
+});
+$("#kings-gambit").click(function() {
+    $("#kings-gambit-show").toggleClass("show");
+});
+$("#kings-gambit-accepted").click(function() {
+    $("#kings-gambit-accepted-show").toggleClass("show");
+});
+$("#kings-gambit-declined").click(function() {
+    $("#kings-gambit-declined-show").toggleClass("show");
+});
+$("#french-defence").click(function() {
+    $("#french-defence-show").toggleClass("show");
+});
+$("#french-main-line").click(function() {
+    $("#french-main-line-show").toggleClass("show");
+});
+$("#french-Nc3").click(function() {
+    $("#french-Nc3-show").toggleClass("show");
+});
+$("#french-tarrasch").click(function() {
+    $("#french-tarrasch-show").toggleClass("show");
+});
+$("#french-advance").click(function() {
+    $("#french-advance-show").toggleClass("show");
+});
+$("#caro-kann-defence").click(function() {
+    $("#caro-kann-show").toggleClass("show");
+});
+$("#caro-kann-main-line").click(function() {
+    $("#caro-main-line-show").toggleClass("show");
+});
+$("#pirc-defence").click(function() {
+    $("#pirc-defence-show").toggleClass("show");
+});
+$("#alekhine-defence").click(function() {
+    $("#alekhine-defence-show").toggleClass("show");
+});
+$("#scandinavian-defence").click(function() {
+    $("#scandinavian-show").toggleClass("show");
+});
+$("#nimzowitsch-defence").click(function() {
+    $("#nimzowitsch-show").toggleClass("show");
+});
+$("#owens-defence").click(function() {
+    $("#owens-show").toggleClass("show");
+});
 
 $("#queen-pawn-opening").click(function() {
     $("#queen-pawn-show").toggleClass("show");
