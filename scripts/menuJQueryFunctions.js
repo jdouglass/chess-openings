@@ -93,13 +93,27 @@ $("#sicilian-najdorf-argentine").click(function() {
 $("#ruy-lopez").click(function() {
     $("#ruy-lopez-show").toggleClass("show");
 });
+$("#morphy-defence").click(function() {
+    $("#morphy-defence-show").toggleClass("show");
+});
+$("#morphy-closed-defence").click(function() {
+    $("#morphy-closed-show").toggleClass("show");
+});
+$("#morphy-main-line").click(function() {
+    $("#morphy-main-line-show").toggleClass("show");
+});
+$("#non-morphy-defence").click(function() {
+    $("#non-morphy-show").toggleClass("show");
+});
+
 
 // ITALIAN GAME
 $("#italian-game").click(function() {
     $("#italian-game-show").toggleClass("show");
 });
-
-// ITALIAN GAME
+$("#giuoco-piano").click(function() {
+    $("#giuoco-show").toggleClass("show");
+});
 $("#three-knights-game").click(function() {
     $("#three-knights-game-show").toggleClass("show");
 });

@@ -127,6 +127,7 @@
     line-height: 30px;
     border-bottom: none;
 }
+
 .level-2-class li a {
     font-size: 15px;
     color: #e6e6e6;
@@ -247,8 +248,23 @@
 #ruy-lopez-show.show {
     display: block;
 }
+#morphy-defence-show.show {
+    display: block;
+}
+#morphy-closed-show.show {
+    display: block;
+}
+#morphy-main-line-show.show {
+    display: block;
+}
+#non-morphy-show.show {
+    display: block;
+}
 
 #italian-game-show.show {
+    display: block;
+}
+#giuoco-show.show {
     display: block;
 }
 
@@ -349,6 +365,9 @@
     display: block;
 }
 #indian-game-show.show {
+    display: block;
+}
+#nimzo-indian-show.show {
     display: block;
 }
 #nimzo-rubinstein-show.show {

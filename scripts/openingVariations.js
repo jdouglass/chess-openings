@@ -1,9 +1,3 @@
-// scotch game 
-const scotchClassical_Be3 = ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Be3", "Qf6", "c3", "Nge7", "Bc4", "Ne5", "Be2", "Qg6", "O-O", "d6"]
-const potterVariation = ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Nb3", "Bb6", "Nc3", "Qf6", "Qe2", "Nge7", "Be3", "O-O", "O-O-O", "d6"]
-const scotchIntermezzo = ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Nxc6", "Qf6", "Qd2", "dxc6", "Nc3"]
-const steinitzVariation = ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Nxd4", "Qxd4", "d6", "Nc3", "Nf6", "f3", "Be7", "Be3", "O-O", "O-O-O"]
-const scotchGambit = ["e4", "e5", "Nf3", "Nc6", "d4", "Nxd4", "Bc4", "Bc5", "c3", "Nf6"]
 
 
 // ----------------------- OPEN SICILIAN -----------------------
@@ -30,8 +24,22 @@ const sicilianScheveningen = ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf
 
 const sicilianAcceleratedDragon = ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "g6", "Nc3", "Bg7", "Be3", "Nf6", "Bc4", "O-O", "Bb3", "a5"]
 
-// ----------------------- CLOSED SICILIAN -----------------------
-// COME BACK TO THE REST OF THE SICILIANS
+
+// OPEN GAME ---------------------------- //
+
+
+
+// scotch game 
+const scotchClassical_Be3 = ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Be3", "Qf6", "c3", "Nge7", "Bc4", "Ne5", "Be2", "Qg6", "O-O", "d6"]
+const scotchIntermezzo = ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Nxc6", "Qf6", "Qd2", "dxc6", "Nc3"]
+const potterVariation = ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Nb3", "Bb6", "Nc3", "Qf6", "Qe2", "Nge7", "Be3", "O-O", "O-O-O", "d6"]
+const steinitzVariation = ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Nxd4", "Qxd4", "d6", "Nc3", "Nf6", "f3", "Be7", "Be3", "O-O", "O-O-O"]
+const scotchGambit = ["e4", "e5", "Nf3", "Nc6", "d4", "Nxd4", "Bc4", "Bc5", "c3", "Nf6"]
+
+// RUY LOPEZ
 //
-
-
+const lopezMorphy
+const lopezBerlin
+const lopezSteinitz
+const lopezSchliemann
+const lopezClassiical
