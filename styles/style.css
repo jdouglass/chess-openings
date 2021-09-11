@@ -321,3 +321,67 @@
 #queen-pawn-show.show {
     display: block;
 }
+
+#closed-game-show.show {
+    display: block;
+}
+
+#queens-gambit-show.show {
+    display: block;
+}
+
+#q-gambit-accepted-show.show {
+    display: block;
+}
+#q-gambit-declined-show.show {
+    display: block;
+}
+#slav-defence-show.show {
+    display: block;
+}
+#semi-slav-defence-show.show {
+    display: block;
+}
+#chigorin-show.show {
+    display: block;
+}
+#blackmar-diemer-show.show {
+    display: block;
+}
+#indian-game-show.show {
+    display: block;
+}
+#nimzo-rubinstein-show.show {
+    display: block;
+}
+#nimzo-classical-show.show {
+    display: block;
+}
+#queens-indian-show.show {
+    display: block;
+}
+#grunfeld-show.show {
+    display: block;
+}
+#kings-indian-show.show {
+    display: block;
+}
+#benoni-show.show {
+    display: block;
+}
+#benko-show.show {
+    display: block;
+}
+#dutch-show.show {
+    display: block;
+}
+#q-pawn-modern-defence-show.show {
+    display: block;
+}
+#englund-show.show {
+    display: block;
+}
+#english-opening-show.show {
+    display: block;
+}
+
