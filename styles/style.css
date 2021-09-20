@@ -209,6 +209,21 @@
     padding-left: 130px;
 }
 
+/* level 8 */
+.level-8-class {
+    position: static;
+    display: none;
+}
+.level-8-class li {
+    line-height: 30px;
+    border-bottom: none;
+}
+.level-8-class li a {
+    font-size: 15px;
+    color: #e6e6e6;
+    padding-left: 150px;
+}
+
 /* displays the lists when buttons are clicked */
 #kings-pawn-show.show {
     display: block;
@@ -244,6 +259,24 @@
 #najdorf-variation-show.show {
     display: block;
 }
+#sicilian-classical-show.show {
+    display: block;
+}
+#dragon-variation-show.show {
+    display: block;
+}
+#scheveningen-show.show {
+    display: block;
+}
+#accelerated-dragon-show.show {
+    display: block;
+}
+#Nf3-sicilian-show.show {
+    display: block;
+}
+#misc-sicilian-show.show {
+    display: block;
+}
 
 #ruy-lopez-show.show {
     display: block;
@@ -264,13 +297,28 @@
 #italian-game-show.show {
     display: block;
 }
+
 #giuoco-show.show {
     display: block;
 }
 
-#three-knights-game-show.show {
+#evans-gambit-show.show {
     display: block;
 }
+#two-knights-show.show {
+    display: block;
+}
+#semi-italian-show.show {
+    display: block;
+}
+
+#ponziani-show.show {
+    display: block;
+}
+
+/* #three-knights-game-show.show { */
+/*     display: block; */
+/* } */
 
 #petrov-defence-show.show {
     display: block;
@@ -279,24 +327,46 @@
 #philidor-defence-show.show {
     display: block;
 }
+#philidor-countergambit-show.show {
+    display: block;
+}
+
 #vienna-game-show.show {
     display: block;
 }
 #vienna-falkbeer-show.show {
     display: block;
 }
-#bishops-opening-show.show {
+#max-lange-show.show {
     display: block;
 }
+
+/* #bishops-opening-show.show { */
+/*     display: block; */
+/* } */
 #kings-gambit-show.show {
     display: block;
 }
 #kings-gambit-accepted-show.show {
     display: block;
 }
+#kings-knight-gambit-show.show {
+    display: block;
+}
+#k-knight-classical-show.show {
+    display: block;
+}
+#bishops-gambit-show.show {
+    display: block;
+}
 #kings-gambit-declined-show.show {
     display: block;
 }
+#falkbeer-countergambit-show.show {
+    display: block;
+}
+
+
 #french-defence-show.show {
     display: block;
 }
@@ -304,6 +374,9 @@
     display: block;
 }
 #french-Nc3-show.show {
+    display: block;
+}
+#french-classical-show.show {
     display: block;
 }
 #french-tarrasch-show.show {
