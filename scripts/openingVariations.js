@@ -206,3 +206,31 @@ const NIMZO_WILLIAMS = ['e4', 'Nc6', 'Nf3', 'd6', 'd4', 'Bg4', 'Bb5', 'a6', 'Bxc
 
 const OWENS_Bd3 = ['e4', 'b6', 'd4', 'Bb7', 'Bd3', 'e6', 'Nf3', 'c5', 'c3', 'Nf6', 'Nbd2', 'Nc6']
 const OWENS_Nc3 = ['e4', 'b6', 'd4', 'Bb7', 'Nc3', 'e6', 'Nf3', 'Bb4', 'Bd3', 'Nf6', 'Bg5', 'h6']
+
+const QGA_MAIN = ['d4', 'd5', 'c4', 'dxc4', 'Nf3', 'Nf6', 'e3', 'e6', 'Bxc4', 'c5', 'O-O', 'a6']
+const QGA_MANNHEIM = ['d4', 'd5', 'c4', 'dxc4', 'Nf3', 'Nf6', 'Qa4+', 'Nc6']
+const QGA_e3 = ['d4', 'd5', 'c4' ,'dxc4', 'e3', 'e5', 'Bxc4', 'exd5', 'exd4']
+const QGA_Qa4 = ['d4', 'd5', 'c4', 'dxc4', 'Qa4+', 'Nc6', 'Nf3']
+
+const QGD_TARTAKOWER = ['d4', 'd5', 'c4', 'e6', 'Nc3', 'Nf6', 'Bg5', 'Be7', 'Nf3', 'h6', 'Bh4', 'O-O', 'e3', 'b6']
+const QGD_ANTI_TARTAKOWER = ['d4', 'd5', 'c4', 'e6', 'Nc3', 'Nf6', 'Bg5', 'Be7', 'Nf3', 'h6', 'Bxf6', 'Bxf6']
+const QGD_LASKER = ['d4', 'd5', 'c4', 'e6', 'Nc3', 'Nf6', 'Bg5', 'Be7', 'Nf3', 'O-O', 'e3', 'h6', 'Bh4', 'Ne4', 'Bxe7', 'Qxe7']
+const QGD_ORTHODOX = ['d4', 'd5', 'c4', 'e6', 'Nc3', 'Nf6', 'Bg5', 'Be7', 'Nf3', 'O-O', 'e3', 'Nbd7', 'Rc1', 'c6']
+const QGD_CAMBRIDGE = ['d4', 'd5', 'c4', 'e6', 'Nc3', 'Nf6', 'Bg5', 'Nbd7', 'e3', 'c6', 'Nf3', 'Qa5', 'Nd2', 'Bb4', 'Qc2', 'O-O']
+const QGD_EXCHANGE = ['d4', 'd5', 'c4', 'e6', 'Nc3', 'Nf6', 'cxd5', 'exd5', 'Bg5', 'c6', 'Qc2']
+const QGD_RAGOZIN = ['d4', 'd5', 'c4', 'e6', 'Nc3', 'Nf6', 'Nf3', 'Bb4', 'Bg5', 'dxc4', 'e4']
+const QGD_HARRWITZ = ['d4', 'd5', 'c4', 'e6', 'Nc3', 'Nf6', 'Nf3', 'Be7', 'Bf4', 'O-O', 'e3', 'c5', 'dxc5', 'Bxc5']
+const QGD_ALATORTSEV = ['d4', 'd5', 'c4', 'e6', 'Nc3', 'Be7', 'cxd5', 'exd5', 'Bf4', 'c6', 'e3']
+
+const SLAV_EXCHANGE = ['d4', 'd5', 'c4', 'e6', 'cxd5', 'cxd5', 'Nf3', 'Nf6', 'Nc3', 'Nc6', 'Bf4', 'Bf5']
+const SLAV_Nc3 = ['d4', 'd5', 'c4', 'e6', 'Nc3', 'Nf6', 'Nf3', 'Bf5'] // not sure if i should keep this line or revise the moves
+const SLAV_Qc2 = ['d4', 'd5', 'c4', 'e6', 'Nf3', 'Nf6', 'Qc2', 'g6', 'Bf4', 'Bf5', 'Qb3', 'Qb6']
+const SLAV_SLOW = ['d4', 'd5', 'c4', 'e6', 'Nf3', 'Nf6', 'e3', 'Bf5', 'Nc3', 'e6', 'Nh4']
+const SLAV_CHEBANENKO = ['d4', 'd5', 'c4', 'e6', 'Nf3', 'Nf6', 'Nc3', 'a6', 'c5', 'Bf5', 'Bf4', 'Nbd7', 'h3', 'e6', 'e3']
+const SLAV_GELLER = ['d4', 'd5', 'c4', 'e6', 'Nf3', 'Nf6', 'Nc3', 'dxc4', 'e4', 'b5', 'e5', 'Nd5', 'a4', 'e6']
+const SLAV_ALEKHINE = ['d4', 'd5', 'c4', 'e6', 'Nf3', 'Nf6', 'e3', 'b5', 'a4', 'b4', 'Na2', 'e6', 'Bxc4']
+const SLAV_STEINER = ['d4', 'd5', 'c4', 'e6', 'Nf3', 'Nf6', 'Nc3', 'dxc4', 'a4', 'Bg4', 'Ne5', 'Bh5']
+const SLAV_SMYSLOV = ['d4', 'd5', 'c4', 'e6', 'Nf3', 'Nf6', 'Nc3', 'dxc4', 'a4', 'Na6', 'e4', 'Bg4', 'Bxc4', 'e6', 'O-O', 'Nb4']
+const SLAV_DUTCH = ['d4', 'd5', 'c4', 'e6', 'Nf3', 'Nf6', 'Nc3', 'dxc4', 'a4', 'Bf5', 'e3', 'e6', 'Bxc4', 'Bb4', 'O-O', 'O-O']
+const SLAV_KRAUSE = ['d4', 'd5', 'c4', 'e6', 'Nf3', 'Nf6', 'Nc3', 'dxc4', 'a4', 'Bf5', 'Ne5', 'e6', 'f3', 'Bb4', 'e4', 'Bxe4', 'fxe4', 'Nxe4']
+const SLAV_CARLSBAD = ['d4', 'd5', 'c4', 'e6', 'Nf3', 'Nf6', 'Nc3', 'dxc4', 'a4', 'Bf5', 'Ne5', 'Nbd7', 'Nxc4', 'Qc7', 'g3', 'e5']

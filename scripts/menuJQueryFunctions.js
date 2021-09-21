@@ -1025,12 +1025,144 @@ $("#queens-gambit").click(function() {
 $("#queens-gambit-accepted").click(function() {
     $("#q-gambit-accepted-show").toggleClass("show");
 });
+$("#qga-main").click(function() {
+    startGame()
+    variation = QGA_MAIN
+    console.log(variation)
+});
+$("#qga-mannhein").click(function() {
+    startGame()
+    variation = QGA_MANNHEIM
+    console.log(variation)
+});
+$("#qga-e3").click(function() {
+    startGame()
+    variation = QGA_e3
+    console.log(variation)
+});
+$("#qga-Qa4").click(function() {
+    startGame()
+    variation = QGA_Qa4
+    console.log(variation)
+});
+
+
+
 $("#queens-gambit-declined").click(function() {
     $("#q-gambit-declined-show").toggleClass("show");
 });
+$("#qgd-tartakower").click(function() {
+    startGame()
+    variation = QGD_TARTAKOWER
+    console.log(variation)
+});
+$("#qgd-anti-tartakower").click(function() {
+    startGame()
+    variation = QGD_ANTI_TARTAKOWER
+    console.log(variation)
+});
+$("#qgd-lasker").click(function() {
+    startGame()
+    variation = QGD_LASKER
+    console.log(variation)
+});
+$("#qgd-orthodox").click(function() {
+    startGame()
+    variation = QGD_ORTHODOX
+    console.log(variation)
+});
+$("#qgd-cambridge-springs").click(function() {
+    startGame()
+    variation = QGD_CAMBRIDGE
+    console.log(variation)
+});
+$("#qgd-exchange").click(function() {
+    startGame()
+    variation = QGD_EXCHANGE
+    console.log(variation)
+});
+$("#qgd-ragozin").click(function() {
+    startGame()
+    variation = QGD_RAGOZIN
+    console.log(variation)
+});
+$("#qgd-harrwitz").click(function() {
+    startGame()
+    variation = QGD_HARRWITZ
+    console.log(variation)
+});
+$("#qgd-alatortsev").click(function() {
+    startGame()
+    variation = QGD_ALATORTSEV
+    console.log(variation)
+});
+
+
 $("#slav-defence").click(function() {
     $("#slav-defence-show").toggleClass("show");
 });
+$("#slav-exchange").click(function() {
+    startGame()
+    variation = SLAV_EXCHANGE
+    console.log(variation)
+});
+$("#slav-Nc3").click(function() {
+    startGame()
+    variation = SLAV_Nc3
+    console.log(variation)
+});
+$("#slav-Qc2").click(function() {
+    startGame()
+    variation = SLAV_Qc2
+    console.log(variation)
+});
+$("#slav-slow").click(function() {
+    startGame()
+    variation = SLAV_SLOW
+    console.log(variation)
+});
+$("#slav-geller").click(function() {
+    startGame()
+    variation = SLAV_GELLER
+    console.log(variation)
+});
+$("#slav-alekhine").click(function() {
+    startGame()
+    variation = SLAV_ALEKHINE
+    console.log(variation)
+});
+$("#slav-chebanenko").click(function() {
+    startGame()
+    variation = SLAV_ALEKHINE
+    console.log(variation)
+});
+$("#slav-steiner").click(function() {
+    startGame()
+    variation = SLAV_STEINER
+    console.log(variation)
+});
+$("#slav-smyslov").click(function() {
+    startGame()
+    variation = SLAV_SMYSLOV
+    console.log(variation)
+});
+$("#slav-dutch").click(function() {
+    startGame()
+    variation = SLAV_DUTCH
+    console.log(variation)
+});
+$("#slav-krause").click(function() {
+    startGame()
+    variation = SLAV_KRAUSE
+    console.log(variation)
+});
+$("#slav-carlsbad").click(function() {
+    startGame()
+    variation = SLAV_CARLSBAD
+    console.log(variation)
+});
+
+
 $("#semi-slav-defence").click(function() {
     $("#semi-slav-defence-show").toggleClass("show");
 });
