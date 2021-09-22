@@ -431,6 +431,20 @@
 #semi-slav-defence-show.show {
     display: block;
 }
+#meran-show.show {
+    display: block;
+}
+#anti-meran-show.show {
+    display: block;
+}
+#anti-meran-Bg5-show.show {
+    display: block;
+}
+#fifth-move-show.show {
+    display: block;
+}
+
+
 #chigorin-show.show {
     display: block;
 }

@@ -8,7 +8,6 @@
 //
 // https://github.com/mcba1n/chessboard-arrows
 
-
 var board = null
 var $board = $('#board')
 const game = new Chess()
@@ -138,16 +137,16 @@ function makeBlackMove() {
     attempt = game.history()
 }
 
-function onMoveEnd () {
+function onMoveEnd() {
     $board.find('.square-' + squareToHighlight).addClass('highlight-black')
     updateStatus()
 }
 
 // update the board position after the piece snap
 // for castling, en passant, pawn promotion
-function onSnapEnd () {
+function onSnapEnd() {
     if (variation.length === 0) {
-        $board.find('.square-' + squareToHighlight).addClass('highlight-'+colorToHighlight)
+        $board.find('.square-' + squareToHighlight).addClass('highlight-'+ colorToHighlight)
     }
     board.position(game.fen())
 }

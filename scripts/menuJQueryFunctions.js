@@ -1166,6 +1166,121 @@ $("#slav-carlsbad").click(function() {
 $("#semi-slav-defence").click(function() {
     $("#semi-slav-defence-show").toggleClass("show");
 });
+$("#semi-slav-marshall").click(function() {
+    startGame()
+    variation = SEMI_SLAV_MARSHALL
+    console.log(variation)
+});
+$("#semi-slav-noteboom").click(function() {
+    startGame()
+    variation = SEMI_SLAV_NOTEBOOM
+    console.log(variation)
+});
+$("#semi-slav-meran").click(function() {
+    $("#meran-show").toggleClass("show");
+});
+$("#semi-slav-classical-meran").click(function() {
+    startGame()
+    variation = SEMI_SLAV_CLASSICAL_MERAN
+    console.log(variation)
+});
+$("#semi-slav-modern-meran").click(function() {
+    startGame()
+    variation = SEMI_SLAV_MODERN_MERAN
+    console.log(variation)
+});
+$("#semi-slav-meran-castle").click(function() {
+    startGame()
+    variation = SEMI_SLAV_MERAN_CASTLE
+    console.log(variation)
+});
+$("#semi-slav-meran-e4").click(function() {
+    startGame()
+    variation = SEMI_SLAV_MERAN_e4
+    console.log(variation)
+});
+$("#semi-slav-meran-Bd6").click(function() {
+    startGame()
+    variation = SEMI_SLAV_MERAN_Bd6
+    console.log(variation)
+});
+$("#semi-slav-anti-meran").click(function() {
+    $("#anti-meran-show").toggleClass("show");
+});
+$("#anti-meran-karpov").click(function() {
+    startGame()
+    variation = ANTI_MERAN_KARPOV
+    console.log(variation)
+});
+$("#anti-meran-a3").click(function() {
+    startGame()
+    variation = ANTI_MERAN_a3
+    console.log(variation)
+});
+$("#anti-meran-Rd1").click(function() {
+    startGame()
+    variation = ANTI_MERAN_Rd1
+    console.log(variation)
+});
+$("#anti-meran-e4").click(function() {
+    startGame()
+    variation = ANTI_MERAN_e4
+    console.log(variation)
+});
+$("#anti-meran-Ng5").click(function() {
+    startGame()
+    variation = ANTI_MERAN_Ng5
+    console.log(variation)
+});
+$("#anti-meran-shirov-gambit").click(function() {
+    startGame()
+    variation = ANTI_MERAN_SHIROV_GAMBIT
+    console.log(variation)
+});
+$("#anti-meran-Bg5-variations").click(function() {
+    $("#anti-meran-Bg5-show").toggleClass("show");
+});
+$("#anti-meran-moscow").click(function() {
+    startGame()
+    variation = ANTI_MERAN_MOSCOW
+    console.log(variation)
+});
+$("#anti-meran-anti-moscow").click(function() {
+    startGame()
+    variation = ANTI_MERAN_ANTI_MOSCOW
+    console.log(variation)
+});
+$("#anti-meran-botvinnik").click(function() {
+    startGame()
+    variation = ANTI_MERAN_BOTVINNIK
+    console.log(variation)
+});
+$("#semi-slav-fifth-move").click(function() {
+    $("#fifth-move-show").toggleClass("show");
+});
+$("#semi-slav-Qb3").click(function() {
+    startGame()
+    variation = SEMI_SLAV_Qb3
+    console.log(variation)
+});
+$("#semi-slav-Qd3").click(function() {
+    startGame()
+    variation = SEMI_SLAV_Qd3
+    console.log(variation)
+});
+$("#semi-slav-g3").click(function() {
+    startGame()
+    variation = SEMI_SLAV_g3
+    console.log(variation)
+});
+$("#semi-slav-Bf4").click(function() {
+    startGame()
+    variation = SEMI_SLAV_Bf4
+    console.log(variation)
+});
+
+
+
 $("#chigorin-defence").click(function() {
     $("#chigorin-show").toggleClass("show");
 });
