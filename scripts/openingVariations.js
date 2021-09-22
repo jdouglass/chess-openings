@@ -258,3 +258,8 @@ const SEMI_SLAV_Qb3 = ['d4', 'd5', 'c4', 'c6', 'Nf3', 'Nf6', 'Nc3', 'e6', 'Qb3',
 const SEMI_SLAV_Qd3 = ['d4', 'd5', 'c4', 'c6', 'Nf3', 'Nf6', 'Nc3', 'e6', 'Qd3', 'Nbd7', 'e4', 'dxe4', 'Nxe4', 'Nxe4', 'Qxe4', 'Bb4+', 'Bd2', 'Bxd2+', 'Nxd2']
 const SEMI_SLAV_g3 = ['d4', 'd5', 'c4', 'c6', 'Nf3', 'Nf6', 'Nc3', 'e6', 'g3', 'dxc4', 'Bg2', 'b5', 'Ne5', 'a6', 'a4', 'Bb7']
 const SEMI_SLAV_Bf4 = ['d4', 'd5', 'c4', 'c6', 'Nf3', 'Nf6', 'Nc3', 'e6', 'Bf4', 'dxc4', 'a4', 'Nd5', 'Bg5', 'Be7', 'Bxe7', 'Qxe7']
+
+const CHIGORIN_Nf6 = ['d4', 'd5', 'c4', 'Nc6', 'Nc3', 'Nf6', 'cxd5', 'Nxd5', 'e4', 'Nxc3', 'bxc3', 'e5', 'd5', 'Nb8', 'Nf3', 'exd4']
+const CHIGORIN_dxc4 = ['d4', 'd5', 'c4', 'Nc6', 'Nc3', 'dxc4', 'Nf3', 'Nf6', 'e4', 'Bg4', 'Be3', 'e6', 'Bxc4', 'Bb4']
+const CHIGORIN_Nf3 = ['d4', 'd5', 'c4', 'Nc6', 'Nf3', 'Bg4', 'cxd5', 'Bxf3', 'gxf3', 'Qxd5', 'e3', 'e5', 'Nc3', 'Bb4']
+const CHIGORIN_cxd5 = ['d4', 'd5', 'c4', 'Nc6', 'cxd5', 'Qxd5', 'e3', 'e5', 'Nc3', 'Bb4', 'Bd2', 'Bxc3',' bxc3', 'Nf6']

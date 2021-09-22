@@ -1280,10 +1280,32 @@ $("#semi-slav-Bf4").click(function() {
 });
 
 
-
 $("#chigorin-defence").click(function() {
     $("#chigorin-show").toggleClass("show");
 });
+$("#chigorin-Nf6").click(function() {
+    startGame()
+    variation = CHIGORIN_Nf6
+    console.log(variation)
+});
+$("#chigorin-dxc4").click(function() {
+    startGame()
+    variation = CHIGORIN_dxc4
+    console.log(variation)
+});
+$("#chigorin-Nf3").click(function() {
+    startGame()
+    variation = CHIGORIN_Nf3
+    console.log(variation)
+});
+$("#chigorin-cxd5").click(function() {
+    startGame()
+    variation = CHIGORIN_cxd5
+    console.log(variation)
+});
+
+
+
 $("#blackmar-diemer-gambit").click(function() {
     $("#blackmar-diemer-show").toggleClass("show");
 });
