@@ -1556,26 +1556,249 @@ $("#catalan-closed-botvinnik").click(function() {
 $("#grunfeld-defence").click(function() {
     $("#grunfeld-show").toggleClass("show");
 });
+$("#grunfeld-exchange").click(function() {
+    startGame()
+    variation = GRUNFELD_EXCHANGE
+    console.log(variation)
+});
+$("#grunfeld-hungarian").click(function() {
+    startGame()
+    variation = GRUNFELD_HUNGARIAN
+    console.log(variation)
+});
+$("#grunfeld-smyslov").click(function() {
+    startGame()
+    variation = GRUNFELD_SMYSLOV
+    console.log(variation)
+});
+$("#grunfeld-taimanov").click(function() {
+    startGame()
+    variation = GRUNFELD_TAIMANOV
+    console.log(variation)
+});
+$("#grunfeld-gambit").click(function() {
+    startGame()
+    variation = GRUNFELD_GAMBIT
+    console.log(variation)
+});
+$("#neo-grunfeld").click(function() {
+    startGame()
+    variation = NEO_GRUNFELD
+    console.log(variation)
+});
+
+
 $("#kings-indian-defence").click(function() {
     $("#kings-indian-show").toggleClass("show");
 });
+$("#kings-indian-main-line").click(function() {
+    startGame()
+    variation = KID_MAIN_LINE
+    console.log(variation)
+});
+$("#kings-indian-old-main").click(function() {
+    startGame()
+    variation = KID_OLD_MAIN_LINE
+    console.log(variation)
+});
+$("#kings-indian-petrosian").click(function() {
+    startGame()
+    variation = KID_PETROSIAN
+    console.log(variation)
+});
+$("#kings-indian-gligoric").click(function() {
+    startGame()
+    variation = KID_GLIGORIC
+    console.log(variation)
+});
+$("#kings-indian-exchange").click(function() {
+    startGame()
+    variation = KID_EXCHANGE
+    console.log(variation)
+});
+$("#kings-indian-samisch").click(function() {
+    startGame()
+    variation = KID_SAMISCH
+    console.log(variation)
+});
+$("#kings-indian-panno").click(function() {
+    startGame()
+    variation = KID_PANNO
+    console.log(variation)
+});
+$("#kings-indian-averbakh").click(function() {
+    startGame()
+    variation = KID_AVERBAKH
+    console.log(variation)
+});
+$("#kings-indian-four-pawns").click(function() {
+    startGame()
+    variation = KID_FOUR_PAWNS
+    console.log(variation)
+});
+$("#kings-indian-gallagher").click(function() {
+    startGame()
+    variation = KID_GALLAGHER
+    console.log(variation)
+});
+
+
 $("#benoni-defence").click(function() {
     $("#benoni-show").toggleClass("show");
+});
+$("#czech-benoni").click(function() {
+    startGame()
+    variation = BENONI_CZECH
+    console.log(variation)
+});
+$("#modern-benoni").click(function() {
+    startGame()
+    variation = BENONI_MODERN
+    console.log(variation)
+});
+$("#snake-benoni").click(function() {
+    startGame()
+    variation = BENONI_SNAKE
+    console.log(variation)
+});
+$("#benoni-fianchetto").click(function() {
+    startGame()
+    variation = BENONI_FIANCHETTO
+    console.log(variation)
+});
+$("#benoni-taimanov").click(function() {
+    startGame()
+    variation = BENONI_TAIMANOV
+    console.log(variation)
+});
+$("#benoni-four-pawns").click(function() {
+    startGame()
+    variation = BENONI_FOUR_PAWNS
+    console.log(variation)
+});
+$("#benoni-classical").click(function() {
+    startGame()
+    variation = BENONI_CLASSICAL
+    console.log(variation)
 });
 $("#benko-gambit").click(function() {
     $("#benko-show").toggleClass("show");
 });
+$("#benko-main-line").click(function() {
+    startGame()
+    variation = BENKO_MAIN
+    console.log(variation)
+});
+$("#benko-sosonko").click(function() {
+    startGame()
+    variation = BENKO_SOSONKO_ACCEPTED
+    console.log(variation)
+});
+$("#benko-river-styx").click(function() {
+    startGame()
+    variation = BENKO_RIVER_STYX
+    console.log(variation)
+});
+
 $("#dutch-defence").click(function() {
     $("#dutch-show").toggleClass("show");
 });
-$("#q-pawn-modern-defence").click(function() {
-    $("#q-pawn-modern-defence-show").toggleClass("show");
+$("#dutch-traditional").click(function() {
+    startGame()
+    variation = DUTCH_TRADITIONAL
+    console.log(variation)
 });
+$("#dutch-common").click(function() {
+    startGame()
+    variation = DUTCH_COMMON
+    console.log(variation)
+});
+$("#dutch-leningrad").click(function() {
+    startGame()
+    variation = DUTCH_LENINGRAD
+    console.log(variation)
+});
+$("#dutch-botvinnik").click(function() {
+    startGame()
+    variation = DUTCH_BOTVINNIK
+    console.log(variation)
+});
+$("#dutch-stonewall").click(function() {
+    startGame()
+    variation = DUTCH_STONEWALL
+    console.log(variation)
+});
+$("#dutch-ilyin").click(function() {
+    startGame()
+    variation = DUTCH_ILYIN
+    console.log(variation)
+});
+
+// $("#q-pawn-modern-defence").click(function() {
+//     $("#q-pawn-modern-defence-show").toggleClass("show");
+// });
+
 $("#englund-gambit").click(function() {
     $("#englund-show").toggleClass("show");
 });
+$("#englund-main").click(function() {
+    startGame()
+    variation = ENGLUND_MAIN
+    console.log(variation)
+});
+$("#englund-blackburne").click(function() {
+    startGame()
+    variation = ENGLUND_BLACKBURNE
+    console.log(variation)
+});
+$("#englund-soller").click(function() {
+    startGame()
+    variation = ENGLUND_SOLLER
+    console.log(variation)
+});
+$("#englund-felbecker").click(function() {
+    startGame()
+    variation = ENGLUND_FELBECKER
+    console.log(variation)
+});
+$("#englund-zilbermints").click(function() {
+    startGame()
+    variation = ENGLUND_ZILBERMINTS
+    console.log(variation)
+});
+
 $("#english-opening").click(function() {
     $("#english-opening-show").toggleClass("show");
+});
+$("#english-symmetrical").click(function() {
+    startGame()
+    variation = ENGLISH_SYMMETRICAL
+    console.log(variation)
+});
+$("#english-mikenas-flohr").click(function() {
+    startGame()
+    variation = ENGLISH_MIKENAS_FLOHR
+    console.log(variation)
+});
+$("#english-botvinnik").click(function() {
+    startGame()
+    variation = ENGLISH_BOTVINNIK
+    console.log(variation)
+});
+$("#english-taimanov").click(function() {
+    startGame()
+    variation = ENGLISH_TAIMANOV
+    console.log(variation)
+});
+$("#english-hort").click(function() {
+    startGame()
+    variation = ENGLISH_HORT
+    console.log(variation)
+});
+$("#english-wimpey").click(function() {
+    startGame()
+    variation = ENGLISH_WIMPEY
+    console.log(variation)
 });
 
 
