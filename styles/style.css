@@ -460,10 +460,16 @@
 #nimzo-rubinstein-show.show {
     display: block;
 }
-#nimzo-classical-show.show {
+#nimzo-capablanca-show.show {
     display: block;
 }
 #queens-indian-show.show {
+    display: block;
+}
+#bid-show.show {
+    display: block;
+}
+#catalan-show.show {
     display: block;
 }
 #grunfeld-show.show {

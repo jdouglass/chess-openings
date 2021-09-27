@@ -263,3 +263,56 @@ const CHIGORIN_Nf6 = ['d4', 'd5', 'c4', 'Nc6', 'Nc3', 'Nf6', 'cxd5', 'Nxd5', 'e4
 const CHIGORIN_dxc4 = ['d4', 'd5', 'c4', 'Nc6', 'Nc3', 'dxc4', 'Nf3', 'Nf6', 'e4', 'Bg4', 'Be3', 'e6', 'Bxc4', 'Bb4']
 const CHIGORIN_Nf3 = ['d4', 'd5', 'c4', 'Nc6', 'Nf3', 'Bg4', 'cxd5', 'Bxf3', 'gxf3', 'Qxd5', 'e3', 'e5', 'Nc3', 'Bb4']
 const CHIGORIN_cxd5 = ['d4', 'd5', 'c4', 'Nc6', 'cxd5', 'Qxd5', 'e3', 'e5', 'Nc3', 'Bb4', 'Bd2', 'Bxc3',' bxc3', 'Nf6']
+
+const ALBIN_COUNTERGAMBIT = ['d4', 'd5', 'c4', 'e5', 'dxc5', 'd4', 'Nf3', 'Nc6', 'g3', 'Be6', 'Nbd2', 'Qd7', 'Bg2', 'O-O-O', 'O-O', 'Bh3']
+const ALBIN_LASKER = ['d4', 'd5', 'c4', 'e5', 'dxc5', 'd4', 'e3', 'Bb4+', 'Bd2', 'dxe3', 'Bxb4', 'exf2+', 'Ke2', 'fxg1=N+']
+
+const AUSTRIAN_DEFENCE = ['d4', 'd5', 'c4', 'c5', 'cxd5', 'Nf6', 'Nf3', 'cxd4', 'Nxd4', 'Nxd5', 'e4', 'Nc7']
+
+const LONDON_SYSTEM = ['d4', 'd5', 'Nf3', 'e6', 'Bf4', 'b6'] // get a deeper line and more variations for it
+
+const STONEWALL_ATTACK = ['d4', 'd5', 'f4', 'Nf6', 'e3', 'e6', 'Nf3', 'c5', 'c3', 'Nc6', 'Bd3', 'Bd6', 'O-O', 'O-O']
+
+const BLACKMAR_GUNDERAM = ['d4', 'd5', 'e4', 'dxe4', 'Nc3', 'Nf6', 'f3', 'exf3', 'Nxf3', 'Bf5', 'Ne5', 'e6', 'g4', 'Bg6', 'Bg2', 'c6', 'h4']
+const BLACKMAR_TEICHMANN = ['d4', 'd5', 'e4', 'dxe4', 'Nc3', 'Nf6', 'f3', 'exf3', 'Nxf3', 'Bg4', 'h3', 'Bxf3', 'Qxf3']
+const BLACKMAR_EUWE = ['d4', 'd5', 'e4', 'dxe4', 'Nc3', 'Nf6', 'f3', 'exf3', 'Nxf3', 'e6', 'Bg5', 'Be7', 'Bd3']
+const BLACKMAR_BOGOLJUBOV = ['d4', 'd5', 'e4', 'dxe4', 'Nc3', 'Nf6', 'f3', 'exf3', 'Nxf3', 'g6', 'Bc4', 'Bg7', 'O-O', 'O-O', 'Qe1']
+const BLACKMAR_ZIEGLER = ['d4', 'd5', 'e4', 'dxe4', 'Nc3', 'Nf6', 'f3', 'exf3', 'Nxf3', 'c6', 'Bc4', 'Bf5', 'O-O', 'e6', 'Ne5']
+const BLACKMAR_RYDER = ['d4', 'd5', 'e4', 'dxe4', 'Nc3', 'Nf6', 'f3', 'exf3', 'Qxf3', 'Qxd4', 'Be3', 'Qg4', 'Qf2', 'e5']
+const BLACKMAR_OKELLY = ['d4', 'd5', 'e4', 'dxe4', 'Nc3', 'Nf6', 'f3', 'c6', 'Bc4', 'exf3', 'Nxf3', 'Bf5']
+const BLACKMAR_VIENNA = ['d4', 'd5', 'e4', 'dxe4', 'Nc3', 'Nf6', 'f3', 'Bf5', 'fxe4', 'Nxe4', 'Qf3', 'Nd6', 'Bf4', 'e6', 'O-O-O', 'c6', 'g4', 'Bg6', 'Qe3', 'Be7']
+
+const RUBINSTEIN_PARMA = ['d4', 'Nf6', 'c4', 'e6', 'Nc3', 'Bb4', 'e3', 'O-O', 'Bd3', 'd5', 'Nf3', 'c5', 'O-O', 'dxc4', 'Bxc4', 'Nbd7', 'Qe2']
+const RUBINSTEIN_KARPOV = ['d4', 'Nf6', 'c4', 'e6', 'Nc3', 'Bb4', 'e3', 'O-O', 'Bd3', 'd5', 'Nf3', 'c5', 'O-O', 'dxc4', 'Bxc4', 'cxd4', 'exd4', 'b6']
+const RUBINSTEIN_LARSEN = ['d4', 'Nf6', 'c4', 'e6', 'Nc3', 'Bb4', 'e3', 'O-O', 'Bd3', 'd5', 'Nf3', 'c5', 'O-O', 'dxc4', 'Bxc4', 'Nc6', 'a3', 'Ba5']
+const RUBINSTEIN_MAIN = ['d4', 'Nf6', 'c4', 'e6', 'Nc3', 'Bb4', 'e3', 'O-O', 'Bd3', 'd5', 'Nf3', 'c5', 'O-O', 'Nc6', 'a3', 'Bxc3', 'bxc3', 'dxc4', 'Bxc4', 'Qc7']
+const RUBINSTEIN_KHASIN = ['d4', 'Nf6', 'c4', 'e6', 'Nc3', 'Bb4', 'e3', 'O-O', 'Bd3', 'd5', 'Nf3', 'c5', 'O-O', 'Nc6', 'a3', 'Bxc3', 'bxc3', 'Qc7', 'cxd5', 'exd5']
+const RUBINSTEIN_AVERBAKH = ['d4', 'Nf6', 'c4', 'e6', 'Nc3', 'Bb4', 'e3', 'O-O', 'Bd3', 'd5', 'Nf3', 'c5', 'O-O', 'Nbd7', 'cxd5', 'exd5', 'a3']
+const RUBINSTEIN_RESHEVSKY = ['d4', 'Nf6', 'c4', 'e6', 'Nc3', 'Bb4', 'e3', 'O-O', 'Ne2', 'd5', 'a3', 'Be7', 'cxd5']
+const RUBINSTEIN_MODERN = ['d4', 'Nf6', 'c4', 'e6', 'Nc3', 'Bb4', 'e3', 'O-O', 'Bd3', 'd5', 'cxd5', 'exd5', 'Ne2']
+const RUBINSTEIN_HUBNER = ['d4', 'Nf6', 'c4', 'e6', 'Nc3', 'Bb4', 'e3', 'c5', 'Bd3', 'Nc6', 'Nf3', 'Bxc3+', 'bxc3', 'd6']
+const RUBINSTEIN_FISCHER = ['d4', 'Nf6', 'c4', 'e6', 'Nc3', 'Bb4', 'e3', 'b6', 'Ne2', 'Ba6']
+const RUBINSTEIN_TAL = ['d4', 'Nf6', 'c4', 'e6', 'Nc3', 'Bb4', 'e3', 'b6', 'Bd3', 'Bb7', 'Nf3', 'O-O', 'O-O', 'd5']
+const RUBINSTEIN_KERES = ['d4', 'Nf6', 'c4', 'e6', 'Nc3', 'Bb4', 'e3', 'b6', 'Bd3', 'Bb7', 'Nf3', 'O-O', 'O-O', 'c5']
+const RUBINSTEIN_DUTCH = ['d4', 'Nf6', 'c4', 'e6', 'Nc3', 'Bb4', 'e3', 'b6', 'Bd3', 'Bb7', 'Nf3', 'Ne4']
+
+const CAPABLANCA_MAIN = ['d4', 'Nf6', 'c4', 'd6', 'Nc3', 'Bb4', 'Qc2', 'O-O', 'a3', 'Bxc3+', 'Qxc3', 'b6', 'Bg5']
+const CAPABLANCA_c5 = ['d4', 'Nf6', 'c4', 'd6', 'Nc3', 'Bb4', 'Qc2', 'c5', 'dxc5']
+const CAPABLANCA_d5 = ['d4', 'Nf6', 'c4', 'd6', 'Nc3', 'Bb4', 'Qc2', 'd5', 'cxd5', 'Qxd5', 'e3', 'Qf5', 'Bd3']
+const CAPABLANCA_Nc6 = ['d4', 'Nf6', 'c4', 'd6', 'Nc3', 'Bb4', 'Qc2', 'Nc6', 'Nf3', 'd6']
+
+const GHEORGHIU_VARIATION = ['d4', 'Nf6', 'c4', 'e6', 'Nc3', 'Bb4', 'f3', 'd5', 'a3', 'Bxc3+', 'bxc3', 'c5', 'cxd5', 'Nxd5']
+const LENINGRAD_VARIATION = ['d4', 'Nf6', 'c4', 'e6', 'Nc3', 'Bb4', 'Bg5', 'h6', 'Bh4', 'c5', 'd5', 'd6', 'e3', 'Bxc3+', 'bxc3', 'e5']
+
+const QID_MODERN_MAIN = ['d4', 'Nf6', 'c4', 'e6', 'b6', 'g3', 'Ba6', 'b3', 'Bb4+', 'Bd2', 'Be7', 'Bg2', 'c6', 'Bc3', 'd5', 'Ne5', 'Nfd7', 'Nxd7', 'Nxd7', 'Nd2', 'O-O', 'O-O', 'Rc8', 'e4']
+const QID_OLD_MAIN = ['d4', 'Nf6', 'c4', 'e6', 'b6', 'g3', 'Bb7', 'Bg2', 'Be7', 'O-O', 'O-O', 'Nc3', 'Ne4', 'Qc2', 'Nxc3', 'Qxc3']
+const QID_e3 = ['d4', 'Nf6', 'c4', 'e6', 'b6', 'g3', 'e3', 'Bb7', 'Bd3', 'd5', 'O-O']
+
+const BID_Qe7 = ['d4', 'Nf6', 'c4', 'e6', 'Nf3', 'Bb4+', 'Bd2', 'Qe7', 'g3', 'Nc6', 'Nc3', 'Bxc3', 'Bxc3', 'Ne4', 'Rc1', 'O-O', 'Bg2', 'd6', 'd5', 'Nd8', 'dxe6', 'Nxe6']
+const BID_c5 = ['d4', 'Nf6', 'c4', 'e6', 'Nf3', 'Bb4+', 'Bd2', 'c5', 'Bxb4', 'cxb4']
+const BID_Nbd2 = ['d4', 'Nf6', 'c4', 'e6', 'Nf3', 'Bb4+', 'Nbd2']
+
+const CATALAN_OPEN_CLASSICAL = ['d4', 'Nf6', 'c4', 'e6', 'g3', 'd5', 'Bg2', 'dxc4', 'Nf3', 'Be7']
+const CATALAN_OPEN_ALEKHINE = ['d4', 'Nf6', 'c4', 'e6', 'g3', 'd5', 'Bg2', 'dxc4', 'Qa4+', 'Nbd7', 'Qxc4', 'a6', 'Qc2']
+const CATALAN_CLOSED_MAIN = ['d4', 'Nf6', 'c4', 'e6', 'g3', 'd5', 'Bg2', 'Be7', 'Nf3', 'O-O', 'O-O', 'Nbd7', 'Qc2', 'c6', 'Nbd2']
+const CATALAN_CLOSED_BOTVINNIK = ['d4', 'Nf6', 'c4', 'e6', 'g3', 'd5', 'Bg2', 'Be7', 'Nf3', 'O-O', 'O-O', 'Nbd7', 'Nc3', 'c6', 'Qd3']

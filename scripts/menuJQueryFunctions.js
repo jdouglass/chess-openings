@@ -1305,10 +1305,81 @@ $("#chigorin-cxd5").click(function() {
 });
 
 
+$("#albin-countergambit").click(function() {
+    startGame()
+    variation = ALBIN_COUNTERGAMBIT
+    console.log(variation)
+});
+$("#albin-countergambit-lasker").click(function() {
+    startGame()
+    variation = ALBIN_LASKER
+    console.log(variation)
+});
+
+$("#austrian-defence").click(function() {
+    startGame()
+    variation = AUSTRIAN_DEFENCE
+    console.log(variation)
+});
+
+$("#london-system").click(function() {
+    startGame()
+    variation = LONDON_SYSTEM
+    console.log(variation)
+});
+
+$("#stonewall-attack").click(function() {
+    startGame()
+    variation = STONEWALL_ATTACK
+    console.log(variation)
+});
 
 $("#blackmar-diemer-gambit").click(function() {
     $("#blackmar-diemer-show").toggleClass("show");
 });
+$("#blackmar-gunderam").click(function() {
+    startGame()
+    variation = BLACKMAR_GUNDERAM
+    console.log(variation)
+});
+$("#blackmar-teichmann").click(function() {
+    startGame()
+    variation = BLACKMAR_TEICHMANN
+    console.log(variation)
+});
+$("#blackmar-euwe").click(function() {
+    startGame()
+    variation = BLACKMAR_EUWE
+    console.log(variation)
+});
+$("#blackmar-bogoljubov").click(function() {
+    startGame()
+    variation = BLACKMAR_BOGOLJUBOV
+    console.log(variation)
+});
+$("#blackmar-ziegler").click(function() {
+    startGame()
+    variation = BLACKMAR_ZIEGLER
+    console.log(variation)
+});
+$("#blackmar-ryder").click(function() {
+    startGame()
+    variation = BLACKMAR_RYDER
+    console.log(variation)
+});
+$("#blackmar-okelly").click(function() {
+    startGame()
+    variation = BLACKMAR_OKELLY
+    console.log(variation)
+});
+$("#blackmar-vienna").click(function() {
+    startGame()
+    variation = BLACKMAR_VIENNA
+    console.log(variation)
+});
+
+
+
 $("#indian-game").click(function() {
     $("#indian-game-show").toggleClass("show");
 });
@@ -1318,12 +1389,170 @@ $("#nimzo-indian-defence").click(function() {
 $("#nimzo-rubinstein").click(function() {
     $("#nimzo-rubinstein-show").toggleClass("show");
 });
-$("#nimzo-classical").click(function() {
-    $("#nimzo-classical-show").toggleClass("show");
+$("#rubinstein-parma").click(function() {
+    startGame()
+    variation = RUBINSTEIN_PARMA
+    console.log(variation)
 });
+$("#rubinstein-karpov").click(function() {
+    startGame()
+    variation = RUBINSTEIN_KARPOV
+    console.log(variation)
+});
+$("#rubinstein-larsen").click(function() {
+    startGame()
+    variation = RUBINSTEIN_LARSEN
+    console.log(variation)
+});
+$("#rubinstein-main").click(function() {
+    startGame()
+    variation = RUBINSTEIN_MAIN
+    console.log(variation)
+});
+$("#rubinstein-khasin").click(function() {
+    startGame()
+    variation = RUBINSTEIN_KHASIN
+    console.log(variation)
+});
+$("#rubinstein-averbakh").click(function() {
+    startGame()
+    variation = RUBINSTEIN_AVERBAKH
+    console.log(variation)
+});
+$("#rubinstein-reshevsky").click(function() {
+    startGame()
+    variation = RUBINSTEIN_RESHEVSKY
+    console.log(variation)
+});
+$("#rubinstein-modern").click(function() {
+    startGame()
+    variation = RUBINSTEIN_MODERN
+    console.log(variation)
+});
+$("#rubinstein-hubner").click(function() {
+    startGame()
+    variation = RUBINSTEIN_HUBNER
+    console.log(variation)
+});
+$("#rubinstein-fischer").click(function() {
+    startGame()
+    variation = RUBINSTEIN_FISCHER
+    console.log(variation)
+});
+$("#rubinstein-tal").click(function() {
+    startGame()
+    variation = RUBINSTEIN_TAL
+    console.log(variation)
+});
+$("#rubinstein-keres").click(function() {
+    startGame()
+    variation = RUBINSTEIN_KERES
+    console.log(variation)
+});
+$("#rubinstein-dutch").click(function() {
+    startGame()
+    variation = RUBINSTEIN_DUTCH
+    console.log(variation)
+});
+
+
+$("#nimzo-capablanca").click(function() {
+    $("#nimzo-capablanca-show").toggleClass("show");
+});
+$("#nimzo-capablanca-main").click(function() {
+    startGame()
+    variation = CAPABLANCA_MAIN
+    console.log(variation)
+});
+$("#nimzo-capablanca-c5").click(function() {
+    startGame()
+    variation = CAPABLANCA_c5
+    console.log(variation)
+});
+$("#nimzo-capablanca-d5").click(function() {
+    startGame()
+    variation = CAPABLANCA_d5
+    console.log(variation)
+});
+$("#nimzo-capablanca-Nc6").click(function() {
+    startGame()
+    variation = CAPABLANCA_Nc6
+    console.log(variation)
+});
+$("#nimzo-gheorghiu").click(function() {
+    startGame()
+    variation = GHEORGHIU_VARIATION
+    console.log(variation)
+});
+$("#nimzo-leningrad").click(function() {
+    startGame()
+    variation = LENINGRAD_VARIATION
+    console.log(variation)
+});
+
 $("#queens-indian-defence").click(function() {
     $("#queens-indian-show").toggleClass("show");
 });
+$("#qid-modern-main").click(function() {
+    startGame()
+    variation = QID_MODERN_MAIN
+    console.log(variation)
+});
+$("#qid-old-main").click(function() {
+    startGame()
+    variation = QID_OLD_MAIN
+    console.log(variation)
+});
+$("#qid-e3").click(function() {
+    startGame()
+    variation = QID_e3
+    console.log(variation)
+});
+
+
+$("#bogo-indian-defence").click(function() {
+    $("#bid-show").toggleClass("show");
+});
+$("#bid-Qe7").click(function() {
+    startGame()
+    variation = BID_Qe7
+    console.log(variation)
+});
+$("#bid-c5").click(function() {
+    startGame()
+    variation = BID_c5
+    console.log(variation)
+});
+$("#bid-Nbd2").click(function() {
+    startGame()
+    variation = BID_Nbd2
+    console.log(variation)
+});
+
+$("#catalan-opening").click(function() {
+    $("#catalan-show").toggleClass("show");
+});
+$("#catalan-open-classical").click(function() {
+    startGame()
+    variation = CATALAN_OPEN_CLASSICAL
+    console.log(variation)
+});
+$("#catalan-open-alekhine").click(function() {
+    startGame()
+    variation = CATALAN_OPEN_ALEKHINE
+    console.log(variation)
+});
+$("#catalan-closed-main").click(function() {
+    startGame()
+    variation = CATALAN_CLOSED_MAIN
+    console.log(variation)
+});
+$("#catalan-closed-botvinnik").click(function() {
+    startGame()
+    variation = CATALAN_CLOSED_BOTVINNIK
+    console.log(variation)
+});
+
 $("#grunfeld-defence").click(function() {
     $("#grunfeld-show").toggleClass("show");
 });
