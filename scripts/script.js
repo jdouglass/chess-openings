@@ -1,4 +1,4 @@
-// NOTE: this example uses the chess.js library:
+// NOTE: this code uses the chess.js library:
 // https://github.com/jhlywa/chess.js
 //
 //
@@ -8,25 +8,25 @@
 //
 // https://github.com/mcba1n/chessboard-arrows
 
-var board = null
-var $board = $('#board')
+let board = null
+let $board = $('#board')
 const game = new Chess()
-var squareClass = 'square-55d63'
-var squareToHighlight = null
-var colorToHighlight = null
-var $status = $('#status')
-var $fen = $('#fen')
-var $pgn = $('#pgn')
-var variation = []
-var attempt = []
-var totalMoves = 0
+let squareClass = 'square-55d63'
+let squareToHighlight = null
+let colorToHighlight = null
+let $status = $('#status')
+let $fen = $('#fen')
+let $pgn = $('#pgn')
+let variation = []
+let attempt = []
+let totalMoves = 0
 
 
 // updates three variables which are the colour's turn, FEN, and PGN
 // after each move is made and prints to the HTML tags
 function updateStatus () {
-    var status = ''
-    var moveColor = 'White'
+    let status = ''
+    let moveColor = 'White'
 
     if (game.turn() === 'b') {
         moveColor = 'Black'
@@ -76,7 +76,7 @@ function onDragStart (source, piece, position, orientation) {
 
 function onDrop (source, target) {
     // see if the move is legal
-    var move = game.move({
+    let move = game.move({
         from: source,
         to: target,
 
@@ -117,6 +117,10 @@ function onDrop (source, target) {
         }
     }
     updateStatus()
+
+}
+
+function highlightSquare() {
 
 }
 
