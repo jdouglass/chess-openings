@@ -1,20 +1,17 @@
 // openings menu scripts
-$("#kings-pawn-opening").click(function() {
-    $("#kings-pawn-show").toggleClass("show");
-    // $("#kings-pawn-arrow").toggleClass("rotate");
+// $("#kings-pawn-opening").click(function() {
+//     $("#kings-pawn-show").toggleClass("show");
+//     // $("#kings-pawn-arrow").toggleClass("rotate");
+// });
+
+$('.submenu').hide();
+
+$('.pull').click(function(){
+    $(this).closest('li').find('ul.submenu').first().slideToggle();
 });
 
 // SICILIAN DEFENCE
-$("#sicilian-defence").click(function() {
-    $("#sicilian-defence-show").toggleClass("show");
-});
 
-$("#open-sicilian").click(function() {
-    $("#open-sicilian-show").toggleClass("show");
-});
-$("#najdorf-variation").click(function() {
-    $("#najdorf-variation-show").toggleClass("show");
-});
 
 $("#sicilian-najdorf-classical").click(function() {
     startGame()
@@ -53,9 +50,7 @@ $("#sicilian-najdorf-argentine").click(function() {
     variation = sicilianNajdorfArgentine
     console.log(variation)
 });
-$("#dragon-variation").click(function() {
-    $("#dragon-variation-show").toggleClass("show");
-});
+
 $("#dragon-positional").click(function() {
     startGame()
     variation = sicilianDragonPositional
@@ -87,9 +82,7 @@ $("#dragon-harrington-glek").click(function() {
     console.log(variation)
 });
 
-$("#classical-variation").click(function() {
-    $("#sicilian-classical-show").toggleClass("show");
-});
+
 $("#sicilian-richter").click(function() {
     startGame()
     variation = sicilianRichter
@@ -112,9 +105,7 @@ $("#sicilian-boleslavsky").click(function() {
 });
 
 
-$("#scheveningen-variation").click(function() {
-    $("#scheveningen-show").toggleClass("show");
-});
+
 $("#scheveningen-keres").click(function() {
     startGame()
     variation = scheveningenKeres
@@ -144,9 +135,7 @@ $("#scheveningen-tal").click(function() {
 
 
 
-$("#accelerated-dragon").click(function() {
-    $("#accelerated-dragon-show").toggleClass("show");
-});
+
 $("#accelerated-dragon-main").click(function() {
     startGame()
     variation = acceleratedMainLine
@@ -197,44 +186,20 @@ $("#closed-sicilian").click(function() {
 
 
 
-$("#Nf3-sicilian").click(function() {
-    $("#Nf3-sicilian-show").toggleClass("show");
-});
+
 $("#sicilian-nimzowitsch").click(function() {
     startGame()
     variation = sicilianNimzowitsch
     console.log(variation)
 });
 
-$("#misc-sicilian").click(function() {
-    $("#misc-sicilian-show").toggleClass("show");
-});
+
 $("#grand-prix-attack").click(function() {
     startGame()
     variation = grandPrixAttack
     console.log(variation)
 });
 
-$("#open-game").click(function() {
-    $("#open-game-show").toggleClass("show");
-});
-
-$("#kings-knight-opening").click(function() {
-    $("#kings-knight-show").toggleClass("show");
-});
-
-$("#kings-knight-opening-main-line").click(function() {
-    $("#kings-knight-main-show").toggleClass("show");
-});
-
-// SCOTCH GAME
-$("#scotch-game").click(function() {
-    $("#scotch-show").toggleClass("show");
-});
-
-$("#scotch-classical").click(function() {
-    $("#scotch-classical-show").toggleClass("show");
-});
 
 $("#scotch-classical-Be3").click(function() {
     startGame()
@@ -268,12 +233,7 @@ $("#scotch-gambit").click(function() {
 
 
 // RUY LOPEZ
-$("#ruy-lopez").click(function() {
-    $("#ruy-lopez-show").toggleClass("show");
-});
-$("#morphy-defence").click(function() {
-    $("#morphy-defence-show").toggleClass("show");
-});
+
 $("#morphy-exchange").click(function() {
     startGame()
     variation = morphyExchange
@@ -307,9 +267,7 @@ $("#morphy-open-defence").click(function() {
 
 
 
-$("#morphy-closed-defence").click(function() {
-    $("#morphy-closed-show").toggleClass("show");
-});
+
 $("#morphy-delayed-exchange").click(function() {
     startGame()
     variation = morphyDelayedExchange
@@ -349,9 +307,7 @@ $("#morphy-closed-marshall").click(function() {
 
 
 
-$("#morphy-main-line").click(function() {
-    $("#morphy-main-line-show").toggleClass("show");
-});
+
 $("#morphy-pilnik").click(function() {
     startGame()
     variation = morphyPilnik
@@ -396,9 +352,7 @@ $("#morphy-smyslov").click(function() {
 
 
 
-$("#non-morphy-defence").click(function() {
-    $("#non-morphy-show").toggleClass("show");
-});
+
 $("#non-morphy-birds").click(function() {
     startGame()
     variation = nonMorphyBirds
@@ -419,21 +373,14 @@ $("#berlin-defence").click(function() {
 
 
 // ITALIAN GAME
-$("#italian-game").click(function() {
-    $("#italian-game-show").toggleClass("show");
-});
-$("#giuoco-piano").click(function() {
-    $("#giuoco-show").toggleClass("show");
-});
+
 $("#giuoco-main-line").click(function() {
     startGame()
     variation = giuocoMainLine
     console.log(variation)
 });
 
-$("#giuoco-evans-gambit").click(function() {
-    $("#evans-gambit-show").toggleClass("show");
-});
+
 $("#evans-gambit-accepted").click(function() {
     startGame()
     variation = evansGambitAccepted
@@ -449,9 +396,7 @@ $("#giuoco-pianissimo").click(function() {
     variation = giuocoPianissimo
     console.log(variation)
 });
-$("#two-knights-defence").click(function() {
-    $("#two-knights-show").toggleClass("show");
-});
+
 $("#two-knights-main").click(function() {
     startGame()
     variation = twoKnightsMain
@@ -463,9 +408,7 @@ $("#two-knights-traxler").click(function() {
     console.log(variation)
 });
 
-$("#semi-italian-opening").click(function() {
-    $("#semi-italian-show").toggleClass("show");
-});
+
 $("#semi-italian-main").click(function() {
     startGame()
     variation = semiItalianMain
@@ -485,14 +428,9 @@ $("#semi-italian-h3").click(function() {
 
 
 
-// $("#three-knights-game").click(function() {
-//     $("#three-knights-game-show").toggleClass("show");
-// });
 
 // PONZIANI
-$("#ponziani-opening").click(function() {
-    $("#ponziani-show").toggleClass("show");
-});
+
 $("#ponziani-jaenisch").click(function() {
     startGame()
     variation = ponzianiJaenisch
@@ -517,9 +455,6 @@ $("#ponziani-kmoch").click(function() {
 
 
 // PETROV DEFENCE
-$("#petrov-defence").click(function() {
-    $("#petrov-defence-show").toggleClass("show");
-});
 $("#petrov-classical-main").click(function() {
     startGame()
     variation = petrovClassicalMain
@@ -542,9 +477,6 @@ $("#petrov-steinitz").click(function() {
 });
 
 // PHILIDOR DEFENCE
-$("#philidor-defence").click(function() {
-    $("#philidor-defence-show").toggleClass("show");
-});
 $("#philidor-Nxd4").click(function() {
     startGame()
     variation = philidorNxd4
@@ -559,9 +491,6 @@ $("#hanham-variation").click(function() {
     startGame()
     variation = philidorHanham
     console.log(variation)
-});
-$("#philidor-countergambit").click(function() {
-    $("#philidor-countergambit-show").toggleClass("show");
 });
 $("#philidor-zukertort").click(function() {
     startGame()
@@ -590,12 +519,7 @@ $("#philidor-markov").click(function() {
 });
 
 
-$("#vienna-game").click(function() {
-    $("#vienna-game-show").toggleClass("show");
-});
-$("#vienna-falkbeer").click(function() {
-    $("#vienna-falkbeer-show").toggleClass("show");
-});
+
 $("#vienna-game-d5").click(function() {
     startGame()
     variation = viennad5
@@ -618,9 +542,7 @@ $("#vienna-game-mengarini").click(function() {
 });
 
 
-$("#vienna-max-lange").click(function() {
-    $("#max-lange-show").toggleClass("show");
-});
+
 $("#vienna-hamppe-muzio").click(function() {
     startGame()
     variation = viennaHamppeMuzio
@@ -633,21 +555,7 @@ $("#vienna-steinitz-gambit").click(function() {
 });
 
 
-// $("#bishops-opening").click(function() {
-//     $("#bishops-opening-show").toggleClass("show");
-// });
-$("#kings-gambit").click(function() {
-    $("#kings-gambit-show").toggleClass("show");
-});
-$("#kings-gambit-accepted").click(function() {
-    $("#kings-gambit-accepted-show").toggleClass("show");
-});
-$("#kings-knight-gambit").click(function() {
-    $("#kings-knight-gambit-show").toggleClass("show");
-});
-$("#k-knight-classical").click(function() {
-    $("#k-knight-classical-show").toggleClass("show");
-});
+
 $("#muzio-gambit").click(function() {
     startGame()
     variation = muzioGambit
@@ -688,9 +596,7 @@ $("#k-gambit-fischer-defence").click(function() {
     variation = kingsGambitFischer
     console.log(variation)
 });
-$("#bishops-gambit").click(function() {
-    $("#bishops-gambit-show").toggleClass("show");
-});
+
 $("#korchnoi-rec").click(function() {
     startGame()
     variation = kingsGambitKorchnoi
@@ -702,12 +608,7 @@ $("#biguer-rec").click(function() {
     console.log(variation)
 });
 
-$("#kings-gambit-declined").click(function() {
-    $("#kings-gambit-declined-show").toggleClass("show");
-});
-$("#falkbeer-countergambit").click(function() {
-    $("#falkbeer-countergambit-show").toggleClass("show");
-});
+
 $("#falkbeer-countergambit-old").click(function() {
     startGame()
     variation = falkbeerCountergambitOld
@@ -728,15 +629,7 @@ $("#bongcloud").click(function() {
 
 
 
-$("#french-defence").click(function() {
-    $("#french-defence-show").toggleClass("show");
-});
-$("#french-main-line").click(function() {
-    $("#french-main-line-show").toggleClass("show");
-});
-$("#french-Nc3").click(function() {
-    $("#french-Nc3-show").toggleClass("show");
-});
+
 $("#winawer-variation").click(function() {
     startGame()
     variation = winawerVariation
@@ -747,9 +640,7 @@ $("#winawer-poisoned-pawn").click(function() {
     variation = winawerPoisonedPawn
     console.log(variation)
 });
-$("#french-classical-variation").click(function() {
-    $("#french-classical-show").toggleClass("show");
-});
+
 $("#french-burn").click(function() {
     startGame()
     variation = frenchBurn
@@ -778,9 +669,7 @@ $("#french-rubinstein-variation").click(function() {
 
 
 
-$("#french-tarrasch").click(function() {
-    $("#french-tarrasch-show").toggleClass("show");
-});
+
 $("#tarrasch-exd5").click(function() {
     startGame()
     variation = tarraschexd5
@@ -808,9 +697,7 @@ $("#tarrasch-morozvich").click(function() {
 });
 
 
-$("#french-advance").click(function() {
-    $("#french-advance-show").toggleClass("show");
-});
+
 $("#french-advance-Qb6").click(function() {
     startGame()
     variation = frenchAdvanceQb6
@@ -844,12 +731,7 @@ $("#french-exchange").click(function() {
 
 
 
-$("#caro-kann-defence").click(function() {
-    $("#caro-kann-show").toggleClass("show");
-});
-$("#caro-kann-main-line").click(function() {
-    $("#caro-main-line-show").toggleClass("show");
-});
+
 $("#caro-classical").click(function() {
     startGame()
     variation = CARO_CLASSICAL
@@ -901,9 +783,7 @@ $("#caro-two-knights").click(function() {
     console.log(variation)
 });
 
-$("#pirc-defence").click(function() {
-    $("#pirc-defence-show").toggleClass("show");
-});
+
 $("#pirc-austrian-castle").click(function() {
     startGame()
     variation = PIRC_AUSTRIAN_CASTLE
@@ -931,9 +811,7 @@ $("#modern-defence").click(function() {
     console.log(variation)
 });
 
-$("#alekhine-defence").click(function() {
-    $("#alekhine-defence-show").toggleClass("show");
-});
+
 $("#alekhine-four-pawns").click(function() {
     startGame()
     variation = ALEKHINE_FOUR_PAWNS
@@ -961,9 +839,7 @@ $("#alekhine-two-pawns").click(function() {
 });
 
 
-$("#scandinavian-defence").click(function() {
-    $("#scandinavian-show").toggleClass("show");
-});
+
 $("#scandi-classical").click(function() {
     startGame()
     variation = SCANDI_CLASSICAL
@@ -977,9 +853,6 @@ $("#scandi-modern").click(function() {
 
 
 
-$("#nimzowitsch-defence").click(function() {
-    $("#nimzowitsch-show").toggleClass("show");
-});
 $("#nimzowitsch-d4-d5").click(function() {
     startGame()
     variation = NIMZO_d4_d5
@@ -998,9 +871,7 @@ $("#nimzowitsch-williams").click(function() {
 
 
 
-$("#owens-defence").click(function() {
-    $("#owens-show").toggleClass("show");
-});
+
 $("#owens-Bd3").click(function() {
     startGame()
     variation = OWENS_Bd3
@@ -1013,18 +884,7 @@ $("#owens-Nc3").click(function() {
 });
 
 
-$("#queen-pawn-opening").click(function() {
-    $("#queen-pawn-show").toggleClass("show");
-});
-$("#closed-game").click(function() {
-    $("#closed-game-show").toggleClass("show");
-});
-$("#queens-gambit").click(function() {
-    $("#queens-gambit-show").toggleClass("show");
-});
-$("#queens-gambit-accepted").click(function() {
-    $("#q-gambit-accepted-show").toggleClass("show");
-});
+
 $("#qga-main").click(function() {
     startGame()
     variation = QGA_MAIN
@@ -1048,9 +908,7 @@ $("#qga-Qa4").click(function() {
 
 
 
-$("#queens-gambit-declined").click(function() {
-    $("#q-gambit-declined-show").toggleClass("show");
-});
+
 $("#qgd-tartakower").click(function() {
     startGame()
     variation = QGD_TARTAKOWER
@@ -1098,9 +956,7 @@ $("#qgd-alatortsev").click(function() {
 });
 
 
-$("#slav-defence").click(function() {
-    $("#slav-defence-show").toggleClass("show");
-});
+
 $("#slav-exchange").click(function() {
     startGame()
     variation = SLAV_EXCHANGE
@@ -1163,9 +1019,7 @@ $("#slav-carlsbad").click(function() {
 });
 
 
-$("#semi-slav-defence").click(function() {
-    $("#semi-slav-defence-show").toggleClass("show");
-});
+
 $("#semi-slav-marshall").click(function() {
     startGame()
     variation = SEMI_SLAV_MARSHALL
@@ -1176,9 +1030,7 @@ $("#semi-slav-noteboom").click(function() {
     variation = SEMI_SLAV_NOTEBOOM
     console.log(variation)
 });
-$("#semi-slav-meran").click(function() {
-    $("#meran-show").toggleClass("show");
-});
+
 $("#semi-slav-classical-meran").click(function() {
     startGame()
     variation = SEMI_SLAV_CLASSICAL_MERAN
@@ -1203,9 +1055,6 @@ $("#semi-slav-meran-Bd6").click(function() {
     startGame()
     variation = SEMI_SLAV_MERAN_Bd6
     console.log(variation)
-});
-$("#semi-slav-anti-meran").click(function() {
-    $("#anti-meran-show").toggleClass("show");
 });
 $("#anti-meran-karpov").click(function() {
     startGame()
@@ -1237,9 +1086,6 @@ $("#anti-meran-shirov-gambit").click(function() {
     variation = ANTI_MERAN_SHIROV_GAMBIT
     console.log(variation)
 });
-$("#anti-meran-Bg5-variations").click(function() {
-    $("#anti-meran-Bg5-show").toggleClass("show");
-});
 $("#anti-meran-moscow").click(function() {
     startGame()
     variation = ANTI_MERAN_MOSCOW
@@ -1254,9 +1100,6 @@ $("#anti-meran-botvinnik").click(function() {
     startGame()
     variation = ANTI_MERAN_BOTVINNIK
     console.log(variation)
-});
-$("#semi-slav-fifth-move").click(function() {
-    $("#fifth-move-show").toggleClass("show");
 });
 $("#semi-slav-Qb3").click(function() {
     startGame()
@@ -1280,9 +1123,6 @@ $("#semi-slav-Bf4").click(function() {
 });
 
 
-$("#chigorin-defence").click(function() {
-    $("#chigorin-show").toggleClass("show");
-});
 $("#chigorin-Nf6").click(function() {
     startGame()
     variation = CHIGORIN_Nf6
@@ -1334,9 +1174,6 @@ $("#stonewall-attack").click(function() {
     console.log(variation)
 });
 
-$("#blackmar-diemer-gambit").click(function() {
-    $("#blackmar-diemer-show").toggleClass("show");
-});
 $("#blackmar-gunderam").click(function() {
     startGame()
     variation = BLACKMAR_GUNDERAM
@@ -1380,15 +1217,6 @@ $("#blackmar-vienna").click(function() {
 
 
 
-$("#indian-game").click(function() {
-    $("#indian-game-show").toggleClass("show");
-});
-$("#nimzo-indian-defence").click(function() {
-    $("#nimzo-indian-show").toggleClass("show");
-});
-$("#nimzo-rubinstein").click(function() {
-    $("#nimzo-rubinstein-show").toggleClass("show");
-});
 $("#rubinstein-parma").click(function() {
     startGame()
     variation = RUBINSTEIN_PARMA
@@ -1456,9 +1284,6 @@ $("#rubinstein-dutch").click(function() {
 });
 
 
-$("#nimzo-capablanca").click(function() {
-    $("#nimzo-capablanca-show").toggleClass("show");
-});
 $("#nimzo-capablanca-main").click(function() {
     startGame()
     variation = CAPABLANCA_MAIN
@@ -1490,9 +1315,7 @@ $("#nimzo-leningrad").click(function() {
     console.log(variation)
 });
 
-$("#queens-indian-defence").click(function() {
-    $("#queens-indian-show").toggleClass("show");
-});
+
 $("#qid-modern-main").click(function() {
     startGame()
     variation = QID_MODERN_MAIN
@@ -1510,9 +1333,7 @@ $("#qid-e3").click(function() {
 });
 
 
-$("#bogo-indian-defence").click(function() {
-    $("#bid-show").toggleClass("show");
-});
+
 $("#bid-Qe7").click(function() {
     startGame()
     variation = BID_Qe7
@@ -1529,9 +1350,7 @@ $("#bid-Nbd2").click(function() {
     console.log(variation)
 });
 
-$("#catalan-opening").click(function() {
-    $("#catalan-show").toggleClass("show");
-});
+
 $("#catalan-open-classical").click(function() {
     startGame()
     variation = CATALAN_OPEN_CLASSICAL
@@ -1553,9 +1372,7 @@ $("#catalan-closed-botvinnik").click(function() {
     console.log(variation)
 });
 
-$("#grunfeld-defence").click(function() {
-    $("#grunfeld-show").toggleClass("show");
-});
+
 $("#grunfeld-exchange").click(function() {
     startGame()
     variation = GRUNFELD_EXCHANGE
@@ -1588,9 +1405,6 @@ $("#neo-grunfeld").click(function() {
 });
 
 
-$("#kings-indian-defence").click(function() {
-    $("#kings-indian-show").toggleClass("show");
-});
 $("#kings-indian-main-line").click(function() {
     startGame()
     variation = KID_MAIN_LINE
@@ -1643,9 +1457,6 @@ $("#kings-indian-gallagher").click(function() {
 });
 
 
-$("#benoni-defence").click(function() {
-    $("#benoni-show").toggleClass("show");
-});
 $("#czech-benoni").click(function() {
     startGame()
     variation = BENONI_CZECH
@@ -1681,9 +1492,6 @@ $("#benoni-classical").click(function() {
     variation = BENONI_CLASSICAL
     console.log(variation)
 });
-$("#benko-gambit").click(function() {
-    $("#benko-show").toggleClass("show");
-});
 $("#benko-main-line").click(function() {
     startGame()
     variation = BENKO_MAIN
@@ -1700,9 +1508,6 @@ $("#benko-river-styx").click(function() {
     console.log(variation)
 });
 
-$("#dutch-defence").click(function() {
-    $("#dutch-show").toggleClass("show");
-});
 $("#dutch-traditional").click(function() {
     startGame()
     variation = DUTCH_TRADITIONAL
@@ -1734,13 +1539,7 @@ $("#dutch-ilyin").click(function() {
     console.log(variation)
 });
 
-// $("#q-pawn-modern-defence").click(function() {
-//     $("#q-pawn-modern-defence-show").toggleClass("show");
-// });
 
-$("#englund-gambit").click(function() {
-    $("#englund-show").toggleClass("show");
-});
 $("#englund-main").click(function() {
     startGame()
     variation = ENGLUND_MAIN
@@ -1767,9 +1566,6 @@ $("#englund-zilbermints").click(function() {
     console.log(variation)
 });
 
-$("#english-opening").click(function() {
-    $("#english-opening-show").toggleClass("show");
-});
 $("#english-symmetrical").click(function() {
     startGame()
     variation = ENGLISH_SYMMETRICAL

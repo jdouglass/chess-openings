@@ -121,7 +121,7 @@ function onDrop (source, target) {
 }
 
 function highlightSquare() {
-
+    // will possibly use this later
 }
 
 function makeBlackMove() {

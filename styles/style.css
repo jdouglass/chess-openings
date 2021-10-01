@@ -1,3 +1,4 @@
+
 #board {
     width: 512px;
 }
@@ -42,14 +43,16 @@
     padding-top: 50px;
 }
 
-#results-box { /* why won't this work when i use the div class? */
+/*
+#results-box {
     width: 400px;
     height: 509px;
     float: left;
-    border: 2px solid black;
+    border: 2px solid black; 
     margin-top: 50px;
     margin-left: 20px;
-}
+} 
+*/
 
 .openings-menu {
     float: left;
@@ -113,11 +116,14 @@
     transition: transform 0.4s;
 }
 
+/*
 .parent li a span.rotate {
     transform: translateY(-50%) rotate(-180deg);
 }
+*/
 
 /* level 2 */
+
 .level-2-class {
     position: static;
     display: none;
@@ -223,277 +229,3 @@
     color: #e6e6e6;
     padding-left: 150px;
 }
-
-/* displays the lists when buttons are clicked */
-#kings-pawn-show.show {
-    display: block;
-}
-
-#open-game-show.show {
-    display: block;
-}
-
-#kings-knight-show.show {
-    display: block;
-}
-#kings-knight-main-show.show {
-    display: block;
-}
-
-#scotch-show.show {
-    display: block;
-}
-
-#scotch-classical-show.show {
-    display: block;
-}
-
-#sicilian-defence-show.show {
-    display: block;
-}
-
-#open-sicilian-show.show {
-    display: block;
-}
-
-#najdorf-variation-show.show {
-    display: block;
-}
-#sicilian-classical-show.show {
-    display: block;
-}
-#dragon-variation-show.show {
-    display: block;
-}
-#scheveningen-show.show {
-    display: block;
-}
-#accelerated-dragon-show.show {
-    display: block;
-}
-#Nf3-sicilian-show.show {
-    display: block;
-}
-#misc-sicilian-show.show {
-    display: block;
-}
-
-#ruy-lopez-show.show {
-    display: block;
-}
-#morphy-defence-show.show {
-    display: block;
-}
-#morphy-closed-show.show {
-    display: block;
-}
-#morphy-main-line-show.show {
-    display: block;
-}
-#non-morphy-show.show {
-    display: block;
-}
-
-#italian-game-show.show {
-    display: block;
-}
-
-#giuoco-show.show {
-    display: block;
-}
-
-#evans-gambit-show.show {
-    display: block;
-}
-#two-knights-show.show {
-    display: block;
-}
-#semi-italian-show.show {
-    display: block;
-}
-
-#ponziani-show.show {
-    display: block;
-}
-
-/* #three-knights-game-show.show { */
-/*     display: block; */
-/* } */
-
-#petrov-defence-show.show {
-    display: block;
-}
-
-#philidor-defence-show.show {
-    display: block;
-}
-#philidor-countergambit-show.show {
-    display: block;
-}
-
-#vienna-game-show.show {
-    display: block;
-}
-#vienna-falkbeer-show.show {
-    display: block;
-}
-#max-lange-show.show {
-    display: block;
-}
-
-/* #bishops-opening-show.show { */
-/*     display: block; */
-/* } */
-#kings-gambit-show.show {
-    display: block;
-}
-#kings-gambit-accepted-show.show {
-    display: block;
-}
-#kings-knight-gambit-show.show {
-    display: block;
-}
-#k-knight-classical-show.show {
-    display: block;
-}
-#bishops-gambit-show.show {
-    display: block;
-}
-#kings-gambit-declined-show.show {
-    display: block;
-}
-#falkbeer-countergambit-show.show {
-    display: block;
-}
-
-
-#french-defence-show.show {
-    display: block;
-}
-#french-main-line-show.show {
-    display: block;
-}
-#french-Nc3-show.show {
-    display: block;
-}
-#french-classical-show.show {
-    display: block;
-}
-#french-tarrasch-show.show {
-    display: block;
-}
-#french-advance-show.show {
-    display: block;
-}
-#caro-kann-show.show {
-    display: block;
-}
-#caro-main-line-show.show {
-    display: block;
-}
-#pirc-defence-show.show {
-    display: block;
-}
-#alekhine-defence-show.show {
-    display: block;
-}
-#scandinavian-show.show {
-    display: block;
-}
-#nimzowitsch-show.show {
-    display: block;
-}
-#owens-show.show {
-    display: block;
-}
-
-#queen-pawn-show.show {
-    display: block;
-}
-
-#closed-game-show.show {
-    display: block;
-}
-
-#queens-gambit-show.show {
-    display: block;
-}
-
-#q-gambit-accepted-show.show {
-    display: block;
-}
-#q-gambit-declined-show.show {
-    display: block;
-}
-#slav-defence-show.show {
-    display: block;
-}
-#semi-slav-defence-show.show {
-    display: block;
-}
-#meran-show.show {
-    display: block;
-}
-#anti-meran-show.show {
-    display: block;
-}
-#anti-meran-Bg5-show.show {
-    display: block;
-}
-#fifth-move-show.show {
-    display: block;
-}
-
-
-#chigorin-show.show {
-    display: block;
-}
-#blackmar-diemer-show.show {
-    display: block;
-}
-#indian-game-show.show {
-    display: block;
-}
-#nimzo-indian-show.show {
-    display: block;
-}
-#nimzo-rubinstein-show.show {
-    display: block;
-}
-#nimzo-capablanca-show.show {
-    display: block;
-}
-#queens-indian-show.show {
-    display: block;
-}
-#bid-show.show {
-    display: block;
-}
-#catalan-show.show {
-    display: block;
-}
-#grunfeld-show.show {
-    display: block;
-}
-#kings-indian-show.show {
-    display: block;
-}
-#benoni-show.show {
-    display: block;
-}
-#benko-show.show {
-    display: block;
-}
-#dutch-show.show {
-    display: block;
-}
-/* #q-pawn-modern-defence-show.show { */
-/*     display: block; */
-/* } */
-#englund-show.show {
-    display: block;
-}
-#english-opening-show.show {
-    display: block;
-}
-
